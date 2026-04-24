@@ -10,7 +10,7 @@ describe('pie chart', () => {
       `
     );
   });
-  // Added comment
+
   it('should render a simple pie diagram with long labels', () => {
     imgSnapshotTest(
       `pie title NETFLIX
