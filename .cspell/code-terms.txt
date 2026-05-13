@@ -17,6 +17,7 @@ BQUOTE
 bramp
 BRKT
 brotli
+browserlist
 callbackargs
 callbackname
 classdef
@@ -100,6 +101,7 @@ QSTR
 readmodel
 reinit
 rels
+renovatebot
 reqs
 resetframe
 rewritelinks

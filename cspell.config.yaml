@@ -24,8 +24,6 @@ ignorePaths:
   - '*.patch'
   - 'docs/**/*.html'
   - 'cypress/platform/**'
-  - '.github/workflows/renovatebot-config-lint.yml'
-  - '.github/workflows/update-browserlist.yml'
 dictionaries:
   - misc-terms
 overrides:
