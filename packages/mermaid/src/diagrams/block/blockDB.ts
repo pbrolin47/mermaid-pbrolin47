@@ -23,7 +23,6 @@ let diagramId = '';
 
 const sanitizeText = (txt: string) => common.sanitizeText(txt, config);
 
-// Added comment for test
 /**
  * Called when the parser comes across a (style) class definition
  * @example classDef my-style fill:#f96;
