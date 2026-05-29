@@ -34,7 +34,7 @@ import {
   isArchitectureService,
   shiftPositionByArchitectureDirectionPair,
 } from './architectureTypes.js';
-// Change comment again
+
 const DEFAULT_ARCHITECTURE_CONFIG: Required<ArchitectureDiagramConfig> =
   DEFAULT_CONFIG.architecture;
 export class ArchitectureDB implements DiagramDB {

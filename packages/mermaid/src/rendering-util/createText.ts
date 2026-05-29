@@ -16,7 +16,7 @@ import { splitLineToFitWidth } from './splitText.js';
 import type { MarkdownLine, MarkdownWord } from './types.js';
 import { getConfig } from '../config.js';
 import type { D3Selection } from '../types.js';
-
+// Comment to trigg all e2e
 function applyStyle<T extends Element>(
   dom: d3.Selection<T, unknown, Element | null, unknown>,
   styleFn?: Parameters<typeof dom.attr>[1]
