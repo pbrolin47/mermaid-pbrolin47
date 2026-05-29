@@ -8,7 +8,7 @@
 
 The icon packs available can be found at [icones.js.org](https://icones.js.org/).
 We use the name defined when registering the icon pack, to override the prefix field of the iconify pack. This allows the user to use shorter names for the icons. It also allows us to load a particular pack only when it is used in a diagram.
-
+Just doc-change
 Using JSON file directly from CDN:
 
 ```js
