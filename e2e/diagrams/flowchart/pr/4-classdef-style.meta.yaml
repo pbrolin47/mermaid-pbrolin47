@@ -1,0 +1,5 @@
+description: >
+  Both styling paths in one small diagram: a classDef applied via `class`
+  (node B) and a direct inline `style` statement (node C), so a regression in
+  either the class-based or direct-style path shows up here.
+tags: [styling, classdef, smoke]
