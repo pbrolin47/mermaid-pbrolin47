@@ -1,5 +1,5 @@
-description: "Regression test for a node that is first referenced as a plain node inside one nested subgraph and then given an explicit diamond shape in an enclosing subgraph, verifying dagre resolves it to a single diamond-shaped node and routes multiple duplicate edges into it correctly despite the deep nesting."
+description: 'Regression test for a node that is first referenced as a plain node inside one nested subgraph and then given an explicit diamond shape in an enclosing subgraph, verifying dagre resolves it to a single diamond-shaped node and routes multiple duplicate edges into it correctly despite the deep nesting.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

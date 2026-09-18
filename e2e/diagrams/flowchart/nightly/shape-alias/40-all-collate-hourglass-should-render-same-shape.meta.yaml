@@ -1,5 +1,5 @@
-description: "Verifies that the `collate` and `hourglass` names render the same hourglass collate shape."
+description: 'Verifies that the `collate` and `hourglass` names render the same hourglass collate shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

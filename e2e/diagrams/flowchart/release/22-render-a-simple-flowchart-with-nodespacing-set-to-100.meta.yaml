@@ -1,3 +1,3 @@
-description: "Verifies that the `flowchart.nodeSpacing` config option controls the horizontal gap between sibling nodes at the same rank; the fixture actually configures this to 50px despite the filename referencing 100."
+description: 'Verifies that the `flowchart.nodeSpacing` config option controls the horizontal gap between sibling nodes at the same rank; the fixture actually configures this to 50px despite the filename referencing 100.'
 tags:
-  - "release"
+  - 'release'

@@ -1,5 +1,5 @@
-description: "Verifies that a large, densely connected flowchart with many different FontAwesome icons embedded in node labels renders correctly, under the hand-drawn look."
+description: 'Verifies that a large, densely connected flowchart with many different FontAwesome icons embedded in node labels renders correctly, under the hand-drawn look.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

@@ -1,3 +1,3 @@
-description: "In a top-to-bottom flowchart, checks a direct edge between two sibling child subgraphs nested inside the same parent (sub_one --> sub_two) alongside an outgoing edge from a node declared directly in the parent subgraph to a node outside all subgraphs (_one --> b), including a source comment noting the declaration-order sensitivity of this case."
+description: 'In a top-to-bottom flowchart, checks a direct edge between two sibling child subgraphs nested inside the same parent (sub_one --> sub_two) alongside an outgoing edge from a node declared directly in the parent subgraph to a node outside all subgraphs (_one --> b), including a source comment noting the declaration-order sensitivity of this case.'
 tags:
-  - "release"
+  - 'release'

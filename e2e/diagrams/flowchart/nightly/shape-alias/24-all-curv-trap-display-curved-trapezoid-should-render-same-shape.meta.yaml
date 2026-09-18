@@ -1,5 +1,5 @@
-description: "Verifies that the `curv-trap`, `display`, and `curved-trapezoid` names all render the same curved-trapezoid display shape."
+description: 'Verifies that the `curv-trap`, `display`, and `curved-trapezoid` names all render the same curved-trapezoid display shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

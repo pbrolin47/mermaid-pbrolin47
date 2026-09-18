@@ -1,3 +1,3 @@
 description: "Regression test ensuring that long word-wrapped labels with no explicit line breaks, where every wrapped line fills the configured width, are not clipped by the wavy bottom edge of doc, docs, lin-doc, and tag-doc shapes, whose wave dips a full amplitude below the shape's bounding box."
 tags:
-  - "release"
+  - 'release'

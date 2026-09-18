@@ -1,5 +1,5 @@
-description: "Verifies that the flowchart nodeSpacing configuration option controls the horizontal spacing between sibling nodes, under the hand-drawn look."
+description: 'Verifies that the flowchart nodeSpacing configuration option controls the horizontal spacing between sibling nodes, under the hand-drawn look.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

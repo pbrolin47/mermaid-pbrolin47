@@ -1,5 +1,5 @@
-description: "Verifies that a classDef controlling text color applies correctly to selected nodes in a chain while nodes without the class keep default styling, under the hand-drawn look."
+description: 'Verifies that a classDef controlling text color applies correctly to selected nodes in a chain while nodes without the class keep default styling, under the hand-drawn look.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

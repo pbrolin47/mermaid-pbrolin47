@@ -1,3 +1,3 @@
-description: "Verifies that two separate edges connecting the same pair of nodes (a1 to a2), each carrying its own distinct label (l1 and l2), render as two distinct parallel edges rather than being merged, within a subgraph laid out in RL direction."
+description: 'Verifies that two separate edges connecting the same pair of nodes (a1 to a2), each carrying its own distinct label (l1 and l2), render as two distinct parallel edges rather than being merged, within a subgraph laid out in RL direction.'
 tags:
-  - "release"
+  - 'release'

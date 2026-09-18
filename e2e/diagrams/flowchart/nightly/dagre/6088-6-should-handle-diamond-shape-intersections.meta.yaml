@@ -1,5 +1,5 @@
-description: "Verifies that a diamond-shaped node fanning out to multiple targets via the & edge shorthand still computes correct boundary intersection points when that node is also a member of a subgraph."
+description: 'Verifies that a diamond-shaped node fanning out to multiple targets via the & edge shorthand still computes correct boundary intersection points when that node is also a member of a subgraph.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

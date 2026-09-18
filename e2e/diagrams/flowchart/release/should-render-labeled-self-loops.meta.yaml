@@ -1,3 +1,3 @@
-description: "Verifies that a self-loop edge (a node pointing back to itself) can carry a text label such as |retry| or |again|, and that the loop and its label render correctly with htmlLabels disabled."
+description: 'Verifies that a self-loop edge (a node pointing back to itself) can carry a text label such as |retry| or |again|, and that the loop and its label render correctly with htmlLabels disabled.'
 tags:
-  - "release"
+  - 'release'

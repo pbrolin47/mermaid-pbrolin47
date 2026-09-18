@@ -1,3 +1,3 @@
-description: "Verifies that a `%%` comment line placed between edge statements is correctly ignored by the parser and does not disrupt rendering of the surrounding flowchart."
+description: 'Verifies that a `%%` comment line placed between edge statements is correctly ignored by the parser and does not disrupt rendering of the surrounding flowchart.'
 tags:
-  - "release"
+  - 'release'

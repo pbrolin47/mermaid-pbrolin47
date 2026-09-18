@@ -1,5 +1,5 @@
-description: "Checks that node and edge labels containing line breaks written as <br>, <br/>, and <br /> all render correctly across rectangle and round node shapes, with custom link colors, under the hand-drawn look."
+description: 'Checks that node and edge labels containing line breaks written as <br>, <br/>, and <br /> all render correctly across rectangle and round node shapes, with custom link colors, under the hand-drawn look.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

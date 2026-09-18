@@ -1,5 +1,5 @@
-description: "Verifies that the `fr-rect`, `subproc`, `subprocess`, `framed-rectangle`, and `subroutine` names all render the same framed-rectangle subprocess shape."
+description: 'Verifies that the `fr-rect`, `subproc`, `subprocess`, `framed-rectangle`, and `subroutine` names all render the same framed-rectangle subprocess shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

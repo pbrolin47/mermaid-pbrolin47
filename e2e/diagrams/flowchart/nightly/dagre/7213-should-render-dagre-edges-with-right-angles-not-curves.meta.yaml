@@ -1,5 +1,5 @@
-description: "Regression test (issue 7213) verifying that dagre-layout edges, including five parallel duplicate edges between the same pair of nodes and edges fanning out via the & shorthand across subgraph boundaries, are drawn with right-angled (rectilinear) segments rather than smooth curves."
+description: 'Regression test (issue 7213) verifying that dagre-layout edges, including five parallel duplicate edges between the same pair of nodes and edges fanning out via the & shorthand across subgraph boundaries, are drawn with right-angled (rectilinear) segments rather than smooth curves.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

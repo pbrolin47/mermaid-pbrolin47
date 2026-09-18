@@ -1,3 +1,3 @@
-description: "Verifies that a subgraph whose id/title begins with a numeral (2Two) is parsed and rendered as a subgraph label rather than being misinterpreted as a numeric literal."
+description: 'Verifies that a subgraph whose id/title begins with a numeral (2Two) is parsed and rendered as a subgraph label rather than being misinterpreted as a numeric literal.'
 tags:
-  - "release"
+  - 'release'

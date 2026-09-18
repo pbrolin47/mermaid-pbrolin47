@@ -1,5 +1,5 @@
-description: "Verifies that a classDef named default is automatically applied to every node without an explicit class assignment, while nodes with explicit classes keep their own styling, with HTML labels enabled, under the hand-drawn look."
+description: 'Verifies that a classDef named default is automatically applied to every node without an explicit class assignment, while nodes with explicit classes keep their own styling, with HTML labels enabled, under the hand-drawn look.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

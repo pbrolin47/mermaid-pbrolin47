@@ -1,3 +1,3 @@
-description: "Verifies that the subGraphTitleMargin config (top/bottom spacing reserved for subgraph titles) renders correctly alongside labeled edges that cross subgraph boundaries and connect nested subgraphs with differing directions (TB, RL, BT) to each other."
+description: 'Verifies that the subGraphTitleMargin config (top/bottom spacing reserved for subgraph titles) renders correctly alongside labeled edges that cross subgraph boundaries and connect nested subgraphs with differing directions (TB, RL, BT) to each other.'
 tags:
-  - "release"
+  - 'release'

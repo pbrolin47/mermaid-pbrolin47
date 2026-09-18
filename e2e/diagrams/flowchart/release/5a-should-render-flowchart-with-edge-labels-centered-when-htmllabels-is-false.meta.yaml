@@ -1,3 +1,3 @@
-description: "Verifies that edge labels are rendered horizontally centered on their connecting link when the htmlLabels config option is disabled, exercising the plain-SVG (non-foreignObject) edge-label positioning path."
+description: 'Verifies that edge labels are rendered horizontally centered on their connecting link when the htmlLabels config option is disabled, exercising the plain-SVG (non-foreignObject) edge-label positioning path.'
 tags:
-  - "release"
+  - 'release'

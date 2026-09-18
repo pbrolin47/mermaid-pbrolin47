@@ -1,5 +1,5 @@
-description: "Verifies stadium-shaped nodes with multi-line (<br/>) labels, click-interaction bindings, and classDef-based styling render correctly under dagre layout with htmlLabels disabled and a custom font family."
+description: 'Verifies stadium-shaped nodes with multi-line (<br/>) labels, click-interaction bindings, and classDef-based styling render correctly under dagre layout with htmlLabels disabled and a custom font family.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

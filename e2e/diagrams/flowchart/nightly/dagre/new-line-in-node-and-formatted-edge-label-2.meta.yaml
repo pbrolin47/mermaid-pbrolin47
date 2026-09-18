@@ -1,5 +1,5 @@
-description: "Verifies that markdown-string node and edge labels (backtick-delimited, supporting **bold** text and an explicit newline) render correctly when htmlLabels is disabled."
+description: 'Verifies that markdown-string node and edge labels (backtick-delimited, supporting **bold** text and an explicit newline) render correctly when htmlLabels is disabled.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

@@ -1,5 +1,5 @@
-description: "Verifies that a flowchart rendered with the hand-drawn look fills its container width when useMaxWidth defaults to true."
+description: 'Verifies that a flowchart rendered with the hand-drawn look fills its container width when useMaxWidth defaults to true.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'handdrawn'

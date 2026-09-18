@@ -1,5 +1,5 @@
-description: "Verifies that the `bow-rect`, `stored-data`, and `bow-tie-rectangle` names all render the same bow-tie-rectangle stored-data shape."
+description: 'Verifies that the `bow-rect`, `stored-data`, and `bow-tie-rectangle` names all render the same bow-tie-rectangle stored-data shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

@@ -1,3 +1,3 @@
-description: "Verifies that markdown formatting (bold text via backtick-quoted strings) inside a diamond/decision node label renders correctly alongside multiple incoming and outgoing labeled edges, with htmlLabels disabled so formatting is rendered as SVG text spans."
+description: 'Verifies that markdown formatting (bold text via backtick-quoted strings) inside a diamond/decision node label renders correctly alongside multiple incoming and outgoing labeled edges, with htmlLabels disabled so formatting is rendered as SVG text spans.'
 tags:
-  - "release"
+  - 'release'

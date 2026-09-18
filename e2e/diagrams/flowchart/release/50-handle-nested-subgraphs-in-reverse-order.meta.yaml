@@ -1,3 +1,3 @@
-description: "Checks that mermaid resolves subgraph nesting correctly when a node id referenced inside one subgraph (B, inside subgraph A) collides in name with a subgraph id (B) that is only declared afterward and itself contains a differently-cased node (b) used in an earlier edge."
+description: 'Checks that mermaid resolves subgraph nesting correctly when a node id referenced inside one subgraph (B, inside subgraph A) collides in name with a subgraph id (B) that is only declared afterward and itself contains a differently-cased node (b) used in an earlier edge.'
 tags:
-  - "release"
+  - 'release'

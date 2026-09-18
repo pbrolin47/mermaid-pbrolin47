@@ -1,5 +1,5 @@
-description: "Checks that chained edge definitions (a --> b --> c) parse and render as a linear sequence of nodes, under the hand-drawn look."
+description: 'Checks that chained edge definitions (a --> b --> c) parse and render as a linear sequence of nodes, under the hand-drawn look.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

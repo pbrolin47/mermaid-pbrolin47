@@ -1,5 +1,5 @@
-description: "Verifies that the `comment` and `brace-l` names render the same left-facing curly-brace comment shape."
+description: 'Verifies that the `comment` and `brace-l` names render the same left-facing curly-brace comment shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

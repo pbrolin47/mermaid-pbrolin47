@@ -1,5 +1,5 @@
-description: "Verifies that the `flip-tri`, `manual-file`, and `flipped-triangle` names all render the same flipped-triangle manual-file shape."
+description: 'Verifies that the `flip-tri`, `manual-file`, and `flipped-triangle` names all render the same flipped-triangle manual-file shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

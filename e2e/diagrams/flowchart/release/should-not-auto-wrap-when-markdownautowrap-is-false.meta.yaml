@@ -1,3 +1,3 @@
-description: "Verifies that when markdownAutoWrap is set to false, markdown-string node labels with their own explicit line breaks (bold text, italic text, and bracketed units on separate lines) are rendered using exactly those manual breaks instead of being automatically re-wrapped by mermaid."
+description: 'Verifies that when markdownAutoWrap is set to false, markdown-string node labels with their own explicit line breaks (bold text, italic text, and bracketed units on separate lines) are rendered using exactly those manual breaks instead of being automatically re-wrapped by mermaid.'
 tags:
-  - "release"
+  - 'release'

@@ -1,5 +1,5 @@
-description: "Regression test for multi-level nested subgraphs where node identifiers collide with subgraph identifiers, verifying dagre correctly nests and connects nodes and subgraphs across three levels of containment."
+description: 'Regression test for multi-level nested subgraphs where node identifiers collide with subgraph identifiers, verifying dagre correctly nests and connects nodes and subgraphs across three levels of containment.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

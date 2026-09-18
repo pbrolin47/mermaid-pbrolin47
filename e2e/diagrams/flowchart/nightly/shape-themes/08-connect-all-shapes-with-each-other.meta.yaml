@@ -1,5 +1,5 @@
 description: "Fully interconnects the fork, choice, note, stadium, and odd node shapes (every shape linked to every other) under the 'neo' theme with the 'neo' look, verifying this batch of 5 shapes renders correctly and stays visually distinct under this theme/look combination."
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-themes"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-themes'

@@ -1,5 +1,5 @@
-description: "Verifies that a subgraph whose title starts with a digit is parsed and rendered correctly, under the hand-drawn look."
+description: 'Verifies that a subgraph whose title starts with a digit is parsed and rendered correctly, under the hand-drawn look.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

@@ -1,5 +1,5 @@
-description: "Regression test for an edge drawn directly between two sibling subgraphs nested inside a parent subgraph, alongside an edge from a node inside the subgraph to a node declared only outside it, checking that dagre routes both unambiguously."
+description: 'Regression test for an edge drawn directly between two sibling subgraphs nested inside a parent subgraph, alongside an edge from a node inside the subgraph to a node declared only outside it, checking that dagre routes both unambiguously.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

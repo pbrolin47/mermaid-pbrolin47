@@ -1,5 +1,5 @@
-description: "Verifies that style directives applied to subgraphs (fill, stroke-width, stroke, color) render correctly alongside a densely interconnected set of nodes and edges crossing multiple subgraph boundaries under dagre layout."
+description: 'Verifies that style directives applied to subgraphs (fill, stroke-width, stroke, color) render correctly alongside a densely interconnected set of nodes and edges crossing multiple subgraph boundaries under dagre layout.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

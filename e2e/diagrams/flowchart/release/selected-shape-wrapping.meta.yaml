@@ -1,3 +1,3 @@
-description: "Exercises automatic text wrapping (via wrappingWidth/minNodeWidth) versus manual <br/> line breaks for the same long label text across a wide variety of node shapes, including classic shapes (rounded rectangle, stadium, circle, diamond, triple-circle) and new @{ shape: ... } syntax shapes (diamond, display, delay, dbl-circ, curv-trap, half-rounded-rectangle)."
+description: 'Exercises automatic text wrapping (via wrappingWidth/minNodeWidth) versus manual <br/> line breaks for the same long label text across a wide variety of node shapes, including classic shapes (rounded rectangle, stadium, circle, diamond, triple-circle) and new @{ shape: ... } syntax shapes (diamond, display, delay, dbl-circ, curv-trap, half-rounded-rectangle).'
 tags:
-  - "release"
+  - 'release'

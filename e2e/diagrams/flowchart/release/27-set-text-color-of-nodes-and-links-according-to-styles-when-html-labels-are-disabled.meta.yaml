@@ -1,3 +1,3 @@
-description: "With htmlLabels disabled, verifies that per-node `style color` and per-edge `linkStyle` color/stroke overrides (including a `linkStyle default` rule and index-specific overrides) correctly change text and line colors across square, round, parallelogram, diamond, hexagon, and stadium shaped nodes, using the SVG text rendering path."
+description: 'With htmlLabels disabled, verifies that per-node `style color` and per-edge `linkStyle` color/stroke overrides (including a `linkStyle default` rule and index-specific overrides) correctly change text and line colors across square, round, parallelogram, diamond, hexagon, and stadium shaped nodes, using the SVG text rendering path.'
 tags:
-  - "release"
+  - 'release'

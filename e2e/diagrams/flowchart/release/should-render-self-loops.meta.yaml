@@ -1,3 +1,3 @@
-description: "Verifies that self-loop edges (a node linking back to itself) render correctly at every nesting depth of a multi-level subgraph hierarchy (top level, and subgraphs nested three levels deep), combined with a custom subGraphTitleMargin config."
+description: 'Verifies that self-loop edges (a node linking back to itself) render correctly at every nesting depth of a multi-level subgraph hierarchy (top level, and subgraphs nested three levels deep), combined with a custom subGraphTitleMargin config.'
 tags:
-  - "release"
+  - 'release'

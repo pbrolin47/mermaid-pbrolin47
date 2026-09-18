@@ -1,5 +1,5 @@
-description: "Verifies that long plain-text and markdown node/edge labels still auto-wrap onto multiple lines when markdownAutoWrap is true even though htmlLabels is false (non-HTML/SVG text labels). Split from a single upstream test that rendered three config variants side by side into this standalone fixture."
+description: 'Verifies that long plain-text and markdown node/edge labels still auto-wrap onto multiple lines when markdownAutoWrap is true even though htmlLabels is false (non-HTML/SVG text labels). Split from a single upstream test that rendered three config variants side by side into this standalone fixture.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "v2"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'v2'

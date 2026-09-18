@@ -1,5 +1,5 @@
-description: "Verifies that subgraph title text color respects the titleColor theme variable when using the base theme with custom theme variables and dark mode enabled."
+description: 'Verifies that subgraph title text color respects the titleColor theme variable when using the base theme with custom theme variables and dark mode enabled.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "dagre"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

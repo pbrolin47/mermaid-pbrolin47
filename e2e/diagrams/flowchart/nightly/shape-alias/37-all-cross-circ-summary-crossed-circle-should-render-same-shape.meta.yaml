@@ -1,5 +1,5 @@
-description: "Verifies that the `cross-circ`, `summary`, and `crossed-circle` names all render the same crossed-circle summary shape."
+description: 'Verifies that the `cross-circ`, `summary`, and `crossed-circle` names all render the same crossed-circle summary shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

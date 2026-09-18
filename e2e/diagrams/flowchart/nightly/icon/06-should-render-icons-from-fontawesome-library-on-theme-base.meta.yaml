@@ -1,5 +1,5 @@
-description: "Verifies that Font Awesome brand/solid icons (fab:/fa: syntax) embedded in node labels render correctly under the base theme, across a chain of five icon-labeled nodes (Twitter, Facebook, Coffee, Car, GitHub)."
+description: 'Verifies that Font Awesome brand/solid icons (fab:/fa: syntax) embedded in node labels render correctly under the base theme, across a chain of five icon-labeled nodes (Twitter, Facebook, Coffee, Car, GitHub).'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "icon"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'icon'

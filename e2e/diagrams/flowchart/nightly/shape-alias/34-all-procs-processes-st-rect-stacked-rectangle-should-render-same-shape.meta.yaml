@@ -1,5 +1,5 @@
-description: "Verifies that the `procs`, `processes`, `st-rect`, and `stacked-rectangle` names all render the same stacked-rectangle multi-process shape."
+description: 'Verifies that the `procs`, `processes`, `st-rect`, and `stacked-rectangle` names all render the same stacked-rectangle multi-process shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

@@ -1,3 +1,3 @@
-description: "Verifies that an edge (Start --> A) targeting a node deeply nested inside two levels of subgraphs (Inner within Outer) gets redirected to point at the outermost subgraph once that outer subgraph is collapsed (outer@{ view: collapsed }), rather than pointing at a hidden internal node."
+description: 'Verifies that an edge (Start --> A) targeting a node deeply nested inside two levels of subgraphs (Inner within Outer) gets redirected to point at the outermost subgraph once that outer subgraph is collapsed (outer@{ view: collapsed }), rather than pointing at a hidden internal node.'
 tags:
-  - "release"
+  - 'release'

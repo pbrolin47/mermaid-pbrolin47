@@ -1,5 +1,5 @@
-description: "Verifies that the `datastore` and `data-store` names render the same data-store shape used in data-flow diagrams."
+description: 'Verifies that the `datastore` and `data-store` names render the same data-store shape used in data-flow diagrams.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

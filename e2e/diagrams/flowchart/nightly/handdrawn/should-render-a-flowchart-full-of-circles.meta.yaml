@@ -1,5 +1,5 @@
-description: "Verifies that a large flowchart made up entirely of circular nodes with many interconnecting edges lays out and renders correctly, under the hand-drawn look."
+description: 'Verifies that a large flowchart made up entirely of circular nodes with many interconnecting edges lays out and renders correctly, under the hand-drawn look.'
 tags:
-  - "nightly"
-  - "copied-from-catalogue"
-  - "handdrawn"
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

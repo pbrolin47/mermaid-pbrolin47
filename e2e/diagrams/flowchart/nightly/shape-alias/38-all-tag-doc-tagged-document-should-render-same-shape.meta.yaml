@@ -1,5 +1,5 @@
-description: "Verifies that the `tag-doc` and `tagged-document` names render the same tagged-document shape."
+description: 'Verifies that the `tag-doc` and `tagged-document` names render the same tagged-document shape.'
 tags:
-  - "nightly"
-  - "converted-from-rendering-catalogue"
-  - "shape-alias"
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'
