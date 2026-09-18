@@ -1,0 +1,5 @@
+description: 'Checks that hexagon-shaped nodes render correctly with the hand-drawn sketch look applied, including click bindings and class-based fill styling.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

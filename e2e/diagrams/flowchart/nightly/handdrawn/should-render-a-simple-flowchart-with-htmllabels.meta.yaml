@@ -1,0 +1,5 @@
+description: 'Verifies that a simple flowchart renders correctly with HTML labels enabled, under the hand-drawn look.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

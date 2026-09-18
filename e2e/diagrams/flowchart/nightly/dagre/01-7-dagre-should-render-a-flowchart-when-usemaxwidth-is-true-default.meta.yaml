@@ -1,0 +1,5 @@
+description: 'Verifies that a dagre-layout flowchart fills its container width when useMaxWidth defaults to true, rather than rendering at its natural (smaller) size.'
+tags:
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'dagre'

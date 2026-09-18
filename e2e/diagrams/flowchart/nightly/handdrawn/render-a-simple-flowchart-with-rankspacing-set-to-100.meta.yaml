@@ -1,0 +1,5 @@
+description: 'Verifies that the flowchart rankSpacing configuration option controls the vertical spacing between ranks, under the hand-drawn look.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

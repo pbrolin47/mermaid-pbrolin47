@@ -1,0 +1,3 @@
+description: "Verifies that a classDef's font-weight:bold property, assigned to a node via the `:::className` shorthand, makes the node's label text render in bold."
+tags:
+  - 'release'

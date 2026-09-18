@@ -1,0 +1,5 @@
+description: 'Verifies that hexagon-shaped node labels correctly render literal single quotes as well as the #quot; character-reference escape sequence for double quotes, with htmlLabels enabled.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

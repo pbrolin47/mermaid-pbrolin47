@@ -1,0 +1,3 @@
+description: 'Stress test verifying that a left-to-right flowchart renders correctly with many nodes using very long GUID-style identifiers, multi-line CJK (Chinese) text labels, and a `class` assignment applied uniformly to every node.'
+tags:
+  - 'release'

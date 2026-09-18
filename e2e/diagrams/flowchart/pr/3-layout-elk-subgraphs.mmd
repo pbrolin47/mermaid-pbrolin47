@@ -1,0 +1,16 @@
+---
+config:
+  layout: elk
+---
+flowchart TD
+  subgraph Frontend
+    A[Client] --> B[Cache]
+  end
+  subgraph Backend
+    C[API] --> D[(Database)]
+  end
+  subgraph Auth
+    E[Auth Service] --> F[(Sessions)]
+  end
+  B --> C
+  B --> E

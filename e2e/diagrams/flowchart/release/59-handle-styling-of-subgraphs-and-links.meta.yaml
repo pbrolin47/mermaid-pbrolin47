@@ -1,0 +1,3 @@
+description: 'Verifies that classDef classes can be applied simultaneously to a subgraph container and one of its child nodes, that a node can belong to two classes at once (base color plus subgraph background override), and that linkStyle can recolor specific edges (including a thick ==> edge) by index.'
+tags:
+  - 'release'

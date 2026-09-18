@@ -1,0 +1,3 @@
+description: 'Checks labeled edges crossing between two sibling subgraphs in a top-down flowchart: one edge from a node inside container_Alpha to a specific node inside container_Beta (process_A -->|messages| process_C), and another from a different node inside Alpha directly to the Beta subgraph container as a whole (process_B -->|via_AWSBatch| container_Beta).'
+tags:
+  - 'release'

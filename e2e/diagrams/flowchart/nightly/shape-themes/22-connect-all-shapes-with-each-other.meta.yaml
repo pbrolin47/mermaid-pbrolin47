@@ -1,0 +1,5 @@
+description: "Fully interconnects the tagged-rectangle, documents, lightning-bolt, filled-circle, and window-pane node shapes (every shape linked to every other) under the 'redux' theme with the 'neo' look, verifying this batch of 5 shapes renders correctly and stays visually distinct under this theme/look combination."
+tags:
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-themes'

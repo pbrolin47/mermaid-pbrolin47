@@ -1,0 +1,5 @@
+description: 'Verifies that a basic named subgraph containing nodes and an edge renders correctly, under the hand-drawn look.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

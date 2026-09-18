@@ -1,0 +1,3 @@
+description: 'Verifies that classDef styles (background fill and text color) can be applied to subgraph containers via `class` statements, not just to individual nodes, using titled and untitled subgraphs with htmlLabels disabled.'
+tags:
+  - 'release'

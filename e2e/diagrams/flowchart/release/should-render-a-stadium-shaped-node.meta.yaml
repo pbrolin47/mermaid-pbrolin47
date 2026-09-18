@@ -1,0 +1,3 @@
+description: 'Verifies basic rendering of the stadium shape (rounded-end pill created with ([...]) node syntax) as a starting node feeding into two plain rectangular nodes.'
+tags:
+  - 'release'

@@ -1,0 +1,3 @@
+description: 'Verifies that per-node `style` statements apply fill, stroke, stroke-width, text color, and stroke-dasharray to individual round-edged nodes, using the legacy `graph` keyword rather than `flowchart`.'
+tags:
+  - 'release'

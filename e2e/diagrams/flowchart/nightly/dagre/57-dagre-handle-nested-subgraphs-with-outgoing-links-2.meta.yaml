@@ -1,0 +1,5 @@
+description: 'Verifies dagre layout of three sibling subgraphs connected both via subgraph-to-subgraph edges and via edges that cross directly into internal nodes of other subgraphs.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

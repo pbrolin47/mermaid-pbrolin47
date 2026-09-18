@@ -1,0 +1,3 @@
+description: 'Checks that <img> tags inside HTML node labels render correctly whether used alone, combined with surrounding text, mixed with another image, or omitted entirely in favor of plain text.'
+tags:
+  - 'release'

@@ -1,0 +1,3 @@
+description: 'Verifies that the subGraphTitleMargin config (here with distinct top:8/bottom:16 values) renders correctly for a top-down flowchart containing nested subgraphs with mixed inner directions (LR, RL, BT).'
+tags:
+  - 'release'

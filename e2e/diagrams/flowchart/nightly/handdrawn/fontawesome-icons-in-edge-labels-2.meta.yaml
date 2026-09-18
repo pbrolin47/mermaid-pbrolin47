@@ -1,0 +1,5 @@
+description: 'Verifies that a subgraph containing a single node renders correctly with custom subgraph fill, stroke, stroke-width, and text-color styling, under the hand-drawn look.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

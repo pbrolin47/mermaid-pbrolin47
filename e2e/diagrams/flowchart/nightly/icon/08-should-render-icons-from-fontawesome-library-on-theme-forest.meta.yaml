@@ -1,0 +1,5 @@
+description: 'Verifies that Font Awesome brand/solid icons (fab:/fa: syntax) embedded in node labels render correctly under the forest theme, across a chain of five icon-labeled nodes (Twitter, Facebook, Coffee, Car, GitHub).'
+tags:
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'icon'

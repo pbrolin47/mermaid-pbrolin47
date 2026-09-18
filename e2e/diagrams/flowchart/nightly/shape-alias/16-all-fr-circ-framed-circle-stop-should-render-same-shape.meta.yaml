@@ -1,0 +1,5 @@
+description: 'Verifies that the `fr-circ`, `framed-circle`, and `stop` names all render the same framed-circle stop-point shape.'
+tags:
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

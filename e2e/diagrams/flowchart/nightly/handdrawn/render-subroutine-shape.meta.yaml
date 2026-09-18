@@ -1,0 +1,5 @@
+description: 'Verifies that subroutine-shaped nodes render correctly, including click bindings and class-based fill styling, under the hand-drawn look.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

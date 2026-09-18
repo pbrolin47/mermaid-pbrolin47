@@ -1,0 +1,5 @@
+description: 'Exercises the elk.rectpacking sub-algorithm, which, like elk.box, returns no edge sections, forcing every edge onto the straight-line fallback. The labelled edge additionally verifies that the fallback also sets a valid label position rather than leaving it unset.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'elk-container-algorithms'

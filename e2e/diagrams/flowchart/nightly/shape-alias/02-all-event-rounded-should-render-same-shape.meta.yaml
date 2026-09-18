@@ -1,0 +1,5 @@
+description: 'Verifies that the `event` alias and the canonical `rounded` name render the same rounded-rectangle event shape.'
+tags:
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

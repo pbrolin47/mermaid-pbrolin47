@@ -1,0 +1,5 @@
+description: 'Verifies that the `sl-rect`, `manual-input`, and `sloped-rectangle` names all render the same sloped-rectangle manual-input shape.'
+tags:
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'shape-alias'

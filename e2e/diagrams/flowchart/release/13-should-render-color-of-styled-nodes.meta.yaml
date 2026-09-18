@@ -1,0 +1,3 @@
+description: 'Verifies that both classDef-based styling and per-node `style` directives (fill, stroke, stroke-width, text color, font-weight) are applied correctly, including a style value string that contains embedded spaces (e.g. `color: #00ff00`).'
+tags:
+  - 'release'

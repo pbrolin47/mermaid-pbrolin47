@@ -1,0 +1,3 @@
+description: 'Basic smoke test verifying that a simple flowchart with square, round, and diamond decision nodes, labeled edges, and a FontAwesome icon in a node label renders correctly under default configuration.'
+tags:
+  - 'release'

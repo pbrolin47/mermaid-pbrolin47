@@ -1,0 +1,5 @@
+description: 'Duplicate of the diamond-shape-intersection baseline test: verifies @{shape: diam} diamond nodes inside subgraphs compute correct edge-intersection points alongside a legacy rhombus decision node, under dagre layout.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

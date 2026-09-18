@@ -1,0 +1,3 @@
+description: 'Checks that a subgraph title written as a markdown string (backtick-delimited, using **bold** markdown syntax) is parsed and rendered as a formatted heading rather than literal text.'
+tags:
+  - 'release'

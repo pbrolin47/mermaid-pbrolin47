@@ -1,0 +1,5 @@
+description: 'Checks that long node label text containing explicit <br/> line breaks wraps and renders correctly inside a rhombus node, under the hand-drawn look.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

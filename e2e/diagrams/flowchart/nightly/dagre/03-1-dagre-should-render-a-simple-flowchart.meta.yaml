@@ -1,0 +1,5 @@
+description: 'Renders the same basic top-down flowchart as the other simple-flowchart baseline test (rectangle, round, and decision shapes, labeled edges, a FontAwesome icon label) under dagre layout.'
+tags:
+  - 'nightly'
+  - 'converted-from-rendering-catalogue'
+  - 'dagre'

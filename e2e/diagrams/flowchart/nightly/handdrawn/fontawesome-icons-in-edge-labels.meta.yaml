@@ -1,0 +1,5 @@
+description: 'Verifies that FontAwesome icons render correctly both inside a node label and inside an edge label, under the hand-drawn look.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

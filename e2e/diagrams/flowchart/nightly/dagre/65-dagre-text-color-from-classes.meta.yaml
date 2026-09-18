@@ -1,0 +1,5 @@
+description: "Verifies that a classDef's color property correctly sets node label text color for the specific nodes assigned that class, while other nodes in the same chain keep default styling."
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

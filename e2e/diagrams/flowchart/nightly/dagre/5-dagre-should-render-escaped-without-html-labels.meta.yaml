@@ -1,0 +1,5 @@
+description: 'Verifies that when htmlLabels is disabled, an HTML tag embedded in a node label (<strong>Haiya</strong>) is escaped and shown as literal text rather than being rendered as markup.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

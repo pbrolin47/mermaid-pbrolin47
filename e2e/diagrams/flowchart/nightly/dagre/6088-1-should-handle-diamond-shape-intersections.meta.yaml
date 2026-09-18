@@ -1,0 +1,5 @@
+description: 'Regression test for multiple parallel edges (including one labeled) between two rhombus/diamond-shaped decision nodes where the source node is nested two levels deep inside subgraphs, checking dagre computes correct diamond-boundary intersection points for each parallel edge.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'dagre'

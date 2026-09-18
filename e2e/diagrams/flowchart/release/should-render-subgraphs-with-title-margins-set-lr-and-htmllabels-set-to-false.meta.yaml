@@ -1,0 +1,3 @@
+description: 'Verifies that the subGraphTitleMargin config renders correctly for a left-to-right flowchart containing nested subgraphs with mixed inner directions, when htmlLabels is disabled so labels are drawn as SVG text instead of foreignObject HTML.'
+tags:
+  - 'release'

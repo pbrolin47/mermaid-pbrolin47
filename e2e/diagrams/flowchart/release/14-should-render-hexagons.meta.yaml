@@ -1,0 +1,3 @@
+description: 'Verifies that hexagon-shaped nodes (`{{...}}`) render correctly even with a long multi-line label containing several `<br />` breaks, alongside click event bindings and classDef-based styling on other nodes in the same diagram.'
+tags:
+  - 'release'

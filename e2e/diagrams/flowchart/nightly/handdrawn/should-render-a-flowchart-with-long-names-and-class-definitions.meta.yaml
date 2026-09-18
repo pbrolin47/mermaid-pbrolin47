@@ -1,0 +1,5 @@
+description: 'Verifies that nodes with very long generated ids and multi-line, non-Latin (CJK) label text render correctly when a shared class is applied to all of them, under the hand-drawn look.'
+tags:
+  - 'nightly'
+  - 'copied-from-catalogue'
+  - 'handdrawn'

@@ -1,0 +1,3 @@
+description: "Checks that subgraph titles which look like list headings (beginning with a number and a period, such as '1. first' and '2. second') parse correctly both when quoted and when left unquoted."
+tags:
+  - 'release'

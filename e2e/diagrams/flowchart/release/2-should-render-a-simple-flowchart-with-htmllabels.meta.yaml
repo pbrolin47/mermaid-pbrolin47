@@ -1,0 +1,3 @@
+description: 'Verifies that a basic flowchart renders correctly with `flowchart.htmlLabels` explicitly set to true, using foreignObject-based HTML text labels rather than plain SVG text.'
+tags:
+  - 'release'

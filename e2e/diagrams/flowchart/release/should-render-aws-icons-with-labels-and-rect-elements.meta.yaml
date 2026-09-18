@@ -1,0 +1,3 @@
+description: 'Verifies that icon-shaped nodes using the AWS icon pack (via @{ icon: "aws:..." } shape data) render correctly with a custom label overriding the icon''s default name, chained together with plain edges.'
+tags:
+  - 'release'
