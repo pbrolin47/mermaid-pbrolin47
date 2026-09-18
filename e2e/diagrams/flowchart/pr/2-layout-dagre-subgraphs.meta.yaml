@@ -1,6 +1,6 @@
 description: >
-  Cross-boundary subgraph layout under dagre — two subgraphs (Frontend,
-  Backend) with an edge crossing between them. Mirrors
-  3-layout-elk-subgraphs.mmd's structure exactly so the two only differ by
-  layout engine, not by diagram shape.
+  Cross-boundary subgraph layout under dagre — three subgraphs (Frontend,
+  Backend, Auth) where Frontend has an edge crossing into each of the other
+  two. Mirrors 3-layout-elk-subgraphs.mmd's structure exactly so the two only
+  differ by layout engine, not by diagram shape.
 tags: [layout, dagre, subgraphs]

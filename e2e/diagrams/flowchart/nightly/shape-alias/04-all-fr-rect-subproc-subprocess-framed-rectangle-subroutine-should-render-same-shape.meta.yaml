@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test fr-rect,subproc,subprocess,framed-rectangle,subroutine  > All fr-rect,subproc,subprocess,framed-rectangle,subroutine should render same shape"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "shape-alias"

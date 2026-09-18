@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-icon.spec.js: rendering/flowchart/flowchart-icon.spec.js > when rendering flowchart with icons > should render icons from fontawesome library on theme base"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "icon"

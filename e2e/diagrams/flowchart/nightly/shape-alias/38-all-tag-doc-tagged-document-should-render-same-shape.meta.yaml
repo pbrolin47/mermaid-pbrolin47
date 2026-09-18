@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test tag-doc,tagged-document  > All tag-doc,tagged-document should render same shape"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "shape-alias"

@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-dagre.spec.js: rendering/flowchart/flowchart-dagre.spec.js > Flowchart Dagre > 7-dagre: should render a flowchart when useMaxWidth is true (default)"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "dagre"

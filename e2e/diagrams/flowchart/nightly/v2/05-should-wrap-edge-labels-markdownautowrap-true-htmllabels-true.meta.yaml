@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-v2.spec.js: rendering/flowchart/flowchart-v2.spec.js > Flowchart v2 > Edge label autowrapping > should wrap edge labels (markdownAutoWrap: true, htmlLabels: true) -- split from a single test that rendered 3 config variants on one page into 3 standalone fixtures"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "v2"

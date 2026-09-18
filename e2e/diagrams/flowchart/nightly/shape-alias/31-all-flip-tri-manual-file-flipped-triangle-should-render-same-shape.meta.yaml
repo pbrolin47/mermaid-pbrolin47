@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test flip-tri,manual-file,flipped-triangle  > All flip-tri,manual-file,flipped-triangle should render same shape"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "shape-alias"

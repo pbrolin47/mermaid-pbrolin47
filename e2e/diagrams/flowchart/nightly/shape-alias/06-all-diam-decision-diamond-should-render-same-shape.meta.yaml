@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test diam,decision,diamond  > All diam,decision,diamond should render same shape"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "shape-alias"

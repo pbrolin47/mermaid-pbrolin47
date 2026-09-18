@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-v2.spec.js: rendering/flowchart/flowchart-v2.spec.js > Flowchart v2 > when rendering unsupported markdown > should render raw strings with htmlLabels: false"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "v2"

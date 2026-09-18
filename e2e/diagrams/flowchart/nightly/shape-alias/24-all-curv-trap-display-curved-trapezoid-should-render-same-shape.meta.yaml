@@ -1,0 +1,5 @@
+description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test curv-trap,display,curved-trapezoid  > All curv-trap,display,curved-trapezoid should render same shape"
+tags:
+  - "nightly"
+  - "converted-from-rendering-catalogue"
+  - "shape-alias"

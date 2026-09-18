@@ -9,4 +9,8 @@ flowchart TD
   subgraph Backend
     C[API] --> D[(Database)]
   end
+  subgraph Auth
+    E[Auth Service] --> F[(Sessions)]
+  end
   B --> C
+  B --> E
