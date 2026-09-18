@@ -1,0 +1,3 @@
+description: "Regression test for issue #1433 verifying that a flowchart still renders correctly when the `flowchart.titleTopMargin` config option is set, exercising the title-top-margin layout code path even though this fixture has no diagram title text."
+tags:
+  - "release"

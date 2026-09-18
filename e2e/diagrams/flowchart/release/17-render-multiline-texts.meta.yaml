@@ -1,0 +1,3 @@
+description: "Verifies that all three spellings of the HTML line-break tag (`<br>`, `<br/>`, `<br />`) are treated identically and produce multi-line text in both node labels and edge labels when htmlLabels is disabled, with linkStyle applied to the resulting edges."
+tags:
+  - "release"

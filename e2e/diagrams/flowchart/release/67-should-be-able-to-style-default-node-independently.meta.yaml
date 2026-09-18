@@ -1,0 +1,3 @@
+description: "Verifies that a `style` statement targeting the node id 'default' can add stroke and stroke-width on top of the fill already set by a separate `classDef default` rule, confirming style and classDef contributions for the special 'default' node/class merge rather than one overriding the other."
+tags:
+  - "release"

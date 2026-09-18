@@ -1,0 +1,3 @@
+description: "Verifies there is no naming collision between mermaid's reserved 'default' classDef (used to style all unclassed nodes) and a user-defined node whose literal id is also 'default', ensuring the node named 'default' still renders with the classDef's styling and doesn't break parsing."
+tags:
+  - "release"

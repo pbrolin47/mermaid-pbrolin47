@@ -1,0 +1,3 @@
+description: "Verifies that a markdown-string node label containing an explicit newline plus **bold** formatting, and a bold-formatted edge label, render correctly when htmlLabels is disabled, forcing the non-HTML/SVG-text markdown rendering path."
+tags:
+  - "release"

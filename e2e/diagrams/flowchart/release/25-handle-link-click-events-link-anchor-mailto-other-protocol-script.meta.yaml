@@ -1,0 +1,3 @@
+description: "With `securityLevel: loose`, verifies that `click` event bindings support a variety of URL targets fanned out from one title node via `&` — same-tab and new-tab (`_blank`) https links, an in-page anchor link, a `mailto:` link, a custom protocol link, and a `javascript:` script link."
+tags:
+  - "release"

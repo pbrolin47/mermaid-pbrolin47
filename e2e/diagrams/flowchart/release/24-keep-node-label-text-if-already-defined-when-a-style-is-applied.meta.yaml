@@ -1,0 +1,3 @@
+description: "Verifies that when a circle-shaped node (`(( ))`) is redeclared with the same shape/label across multiple edge statements, and a later `linkStyle`/`style` directive targets one of the edges or nodes, the originally-defined label text is preserved rather than being cleared or overwritten."
+tags:
+  - "release"

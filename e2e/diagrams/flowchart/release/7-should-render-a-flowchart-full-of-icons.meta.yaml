@@ -1,0 +1,3 @@
+description: "Stress-tests rendering of a large, densely interconnected real-world flowchart where most nodes are round-edged shapes containing Font Awesome icon references (fa:fa-cogs, fa:fa-server, fa:fa-database, fa:fa-circle, fa:fa-creative-commons) combined with labels containing brackets, backslashes, and colons."
+tags:
+  - "release"

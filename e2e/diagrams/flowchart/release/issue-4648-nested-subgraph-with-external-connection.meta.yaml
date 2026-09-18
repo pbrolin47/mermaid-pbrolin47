@@ -1,0 +1,3 @@
+description: "Regression test for issue #4648: verifies that an edge connecting a node inside a doubly-nested subgraph (Inner, which uses its own LR direction, nested within Wrapper) to a node outside all subgraphs renders correctly without breaking the nested layout."
+tags:
+  - "release"

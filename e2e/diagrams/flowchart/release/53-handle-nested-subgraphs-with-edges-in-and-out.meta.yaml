@@ -1,0 +1,3 @@
+description: "Checks edges flowing both into and out of two sibling nested subgraphs (subnet1, subnet2) using the `&` multi-node link syntax, where traffic enters from an outside node (internet --> router --> subnet1 & subnet2) and exits back out through another outside node (subnet1 & subnet2 --> nat --> internet), forming a cycle across subgraph boundaries."
+tags:
+  - "release"

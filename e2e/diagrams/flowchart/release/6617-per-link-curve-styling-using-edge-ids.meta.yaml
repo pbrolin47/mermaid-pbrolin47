@@ -1,0 +1,3 @@
+description: "Feature test for GitHub issue #6617: assigns explicit ids to individual edges via the `e1@-->` syntax, then configures each edge's curve type independently (natural, stepAfter, monotoneY, bumpY, linear, catmullRom, cardinal) through `edgeId@{ curve: ... }`, verifying per-edge curve styling overrides work across a shared node graph."
+tags:
+  - "release"

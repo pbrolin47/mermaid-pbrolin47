@@ -1,0 +1,3 @@
+description: "Verifies the flowchart.inheritDir option: subgraph B declares no explicit direction of its own, so it should inherit the outer flowchart's LR direction, while sibling subgraph A explicitly overrides with its own TB direction."
+tags:
+  - "release"

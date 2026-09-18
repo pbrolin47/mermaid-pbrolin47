@@ -1,0 +1,3 @@
+description: "Verifies that stadium-shaped nodes correctly wrap very long or multi-line (via <br/>) text labels onto many lines, growing tall, without the wrapped text crossing the shape's rounded end-cap border, using non-html (SVG text) labels and a monospace font."
+tags:
+  - "release"

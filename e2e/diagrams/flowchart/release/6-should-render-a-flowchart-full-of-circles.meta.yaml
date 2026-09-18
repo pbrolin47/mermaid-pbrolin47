@@ -1,0 +1,3 @@
+description: "Stress/scale test rendering a large real-world-derived graph of many circle-shaped nodes (id(text) syntax) with numerous cross edges and a custom fontFamily config, verifying layout and rendering hold up with a large node/edge count."
+tags:
+  - "release"
