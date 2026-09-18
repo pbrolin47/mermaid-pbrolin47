@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test stadium,pill,terminal  > All stadium,pill,terminal should render same shape"
+description: "Verifies that the `stadium`, `pill`, and `terminal` names all render the same stadium-shaped terminal point."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

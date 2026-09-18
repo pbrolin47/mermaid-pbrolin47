@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-handDrawn.spec.js: rendering/flowchart/flowchart-handDrawn.spec.js > Flowchart HandDrawn > FDH38: should render a flowchart when useMaxWidth is true (default)"
+description: "Verifies that a flowchart rendered with the hand-drawn look fills its container width when useMaxWidth defaults to true."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

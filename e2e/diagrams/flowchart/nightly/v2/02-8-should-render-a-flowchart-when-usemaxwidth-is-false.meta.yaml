@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-v2.spec.js: rendering/flowchart/flowchart-v2.spec.js > Flowchart v2 > 8: should render a flowchart when useMaxWidth is false"
+description: "Verifies that the same decision-node flowchart renders at its natural (intrinsic) size, without stretching to fill the container, when useMaxWidth is explicitly set to false."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

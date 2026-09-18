@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-redux-color-subgraphs.spec.ts: rendering/flowchart/flowchart-redux-color-subgraphs.spec.ts > Flowchart - Redux colour theme subgraphs > Theme: redux-color > should render nested subgraph containers"
+description: "Renders a subgraph (Outer) containing two nested child subgraphs (InnerOne, InnerTwo) alongside an unrelated top-level sibling subgraph (Sibling) under the redux-color theme, checking that nested containers are colored distinctly from their parent and from the sibling at the outer level."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

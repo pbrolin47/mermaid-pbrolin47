@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test h-cyl,das,horizontal-cylinder  > All h-cyl,das,horizontal-cylinder should render same shape"
+description: "Verifies that the `h-cyl`, `das`, and `horizontal-cylinder` names all render the same tilted horizontal-cylinder direct-access-storage shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

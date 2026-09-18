@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test collate,hourglass  > All collate,hourglass should render same shape"
+description: "Verifies that the `collate` and `hourglass` names render the same hourglass collate shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

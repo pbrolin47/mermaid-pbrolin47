@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test trap-b,trapezoid-bottom,priority  > All trap-b,trapezoid-bottom,priority should render same shape"
+description: "Verifies that the `trap-b`, `trapezoid-bottom`, and `priority` names all render the same trapezoid-base-bottom priority-action shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

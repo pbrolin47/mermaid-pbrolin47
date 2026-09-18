@@ -1,0 +1,5 @@
+description: "Exercises the elk.box sub-algorithm, which positions nodes but does not route edges, so every edge here must fall back to a straight line between node centers. Guards against a regression where missing route data crashes on `points.filter`, and where the labelled edge's missing ELK label position renders as `translate(undefined, NaN)` instead of falling back correctly."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "elk-container-algorithms"

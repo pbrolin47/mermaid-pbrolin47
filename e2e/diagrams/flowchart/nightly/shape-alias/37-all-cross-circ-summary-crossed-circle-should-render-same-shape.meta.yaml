@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test cross-circ,summary,crossed-circle  > All cross-circ,summary,crossed-circle should render same shape"
+description: "Verifies that the `cross-circ`, `summary`, and `crossed-circle` names all render the same crossed-circle summary shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

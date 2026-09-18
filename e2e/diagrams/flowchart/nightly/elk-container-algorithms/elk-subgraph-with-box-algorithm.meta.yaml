@@ -1,0 +1,5 @@
+description: "Verifies that a subgraph can override the diagram's default ELK layout algorithm for itself using the `@{ algorithm: … }` shape-data syntax, here setting the `grp` subgraph to elk.box while the rest of the flowchart uses the default elk algorithm."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "elk-container-algorithms"

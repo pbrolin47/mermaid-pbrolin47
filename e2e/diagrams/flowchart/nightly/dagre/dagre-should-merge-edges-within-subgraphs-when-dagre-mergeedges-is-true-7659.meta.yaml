@@ -1,0 +1,5 @@
+description: "Regression test (issue 7659) verifying dagre's edge-merging behavior for converging edges created via the & shorthand, checking that shared edge segments are merged consistently both inside and outside a subgraph."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "dagre"

@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test notched-rectangle,card,notch-rect  > All notched-rectangle,card,notch-rect should render same shape"
+description: "Verifies that the `notched-rectangle`, `card`, and `notch-rect` names all render the same notched-rectangle card shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

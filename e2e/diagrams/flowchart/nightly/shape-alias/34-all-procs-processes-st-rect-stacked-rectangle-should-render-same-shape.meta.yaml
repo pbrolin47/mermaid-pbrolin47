@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test procs,processes,st-rect,stacked-rectangle  > All procs,processes,st-rect,stacked-rectangle should render same shape"
+description: "Verifies that the `procs`, `processes`, `st-rect`, and `stacked-rectangle` names all render the same stacked-rectangle multi-process shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

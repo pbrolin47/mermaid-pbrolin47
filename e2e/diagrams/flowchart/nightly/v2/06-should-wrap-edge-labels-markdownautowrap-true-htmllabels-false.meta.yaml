@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-v2.spec.js: rendering/flowchart/flowchart-v2.spec.js > Flowchart v2 > Edge label autowrapping > should wrap edge labels (markdownAutoWrap: true, htmlLabels: false) -- split from a single test that rendered 3 config variants on one page into 3 standalone fixtures"
+description: "Verifies that long plain-text and markdown node/edge labels still auto-wrap onto multiple lines when markdownAutoWrap is true even though htmlLabels is false (non-HTML/SVG text labels). Split from a single upstream test that rendered three config variants side by side into this standalone fixture."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

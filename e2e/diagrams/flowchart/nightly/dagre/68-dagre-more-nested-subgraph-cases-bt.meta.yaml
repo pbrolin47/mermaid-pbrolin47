@@ -1,0 +1,5 @@
+description: "Verifies dagre layout, in the bottom-to-top (BT) direction, of two sibling subgraphs connected by both a subgraph-to-subgraph edge and a subgraph-to-nested-node edge that together form a cycle between the subgraphs."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "dagre"

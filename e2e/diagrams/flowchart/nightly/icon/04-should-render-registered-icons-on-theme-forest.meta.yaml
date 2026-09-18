@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-icon.spec.js: rendering/flowchart/flowchart-icon.spec.js > when rendering flowchart with icons > should render registered icons on theme forest"
+description: "Verifies that a custom icon registered via mermaid's icon-pack API (fa:fa-bell, not the live Font Awesome library) renders correctly inside a single node label under the forest theme."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

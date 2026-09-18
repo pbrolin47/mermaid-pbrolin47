@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test doc,document  > All doc,document should render same shape"
+description: "Verifies that the `doc` and `document` names render the same wave-edged document shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

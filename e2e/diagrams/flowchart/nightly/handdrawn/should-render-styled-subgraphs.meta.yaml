@@ -1,0 +1,5 @@
+description: "Checks rendering of multiple subgraphs with cross-subgraph edges and custom fill and stroke styling applied to each subgraph, under the hand-drawn look."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "handdrawn"

@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test sl-rect,manual-input,sloped-rectangle  > All sl-rect,manual-input,sloped-rectangle should render same shape"
+description: "Verifies that the `sl-rect`, `manual-input`, and `sloped-rectangle` names all render the same sloped-rectangle manual-input shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

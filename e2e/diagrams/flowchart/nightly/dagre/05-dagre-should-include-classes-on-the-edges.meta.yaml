@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-dagre.spec.js: rendering/flowchart/flowchart-dagre.spec.js > Flowchart Dagre > dagre: should include classes on the edges"
+description: "Checks that the SVG path elements produced for a simple chained flowchart's edges (A-->B-->C-->D) receive the expected CSS classes under dagre layout."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

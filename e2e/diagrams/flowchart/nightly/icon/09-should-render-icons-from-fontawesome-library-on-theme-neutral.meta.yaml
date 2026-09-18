@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-icon.spec.js: rendering/flowchart/flowchart-icon.spec.js > when rendering flowchart with icons > should render icons from fontawesome library on theme neutral"
+description: "Verifies that Font Awesome brand/solid icons (fab:/fa: syntax) embedded in node labels render correctly under the neutral theme, across a chain of five icon-labeled nodes (Twitter, Facebook, Coffee, Car, GitHub)."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

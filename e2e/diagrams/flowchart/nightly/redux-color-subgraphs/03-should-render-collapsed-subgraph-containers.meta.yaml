@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-redux-color-subgraphs.spec.ts: rendering/flowchart/flowchart-redux-color-subgraphs.spec.ts > Flowchart - Redux colour theme subgraphs > Theme: redux > should render collapsed subgraph containers"
+description: "Renders three sibling subgraphs (First, Second, Third) under the plain redux theme where the middle one is marked with the @{ view: collapsed } shape data, checking that a collapsed subgraph still receives themed container coloring alongside its expanded neighbors."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

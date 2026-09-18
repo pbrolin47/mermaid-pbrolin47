@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test folder,directory  > All folder,directory should render same shape"
+description: "Verifies that the `folder` and `directory` names render the same folder/directory shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

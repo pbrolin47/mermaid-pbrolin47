@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test div-rect,div-proc,divided-rectangle,divided-process  > All div-rect,div-proc,divided-rectangle,divided-process should render same shape"
+description: "Verifies that the `div-rect`, `div-proc`, `divided-rectangle`, and `divided-process` names all render the same divided-rectangle process shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

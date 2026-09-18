@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test extract,tri,triangle  > All extract,tri,triangle should render same shape"
+description: "Verifies that the `extract`, `tri`, and `triangle` names all render the same triangle extract shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

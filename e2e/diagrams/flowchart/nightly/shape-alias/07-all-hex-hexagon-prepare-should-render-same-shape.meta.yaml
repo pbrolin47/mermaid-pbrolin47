@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test hex,hexagon,prepare  > All hex,hexagon,prepare should render same shape"
+description: "Verifies that the `hex`, `hexagon`, and `prepare` names all render the same hexagon preparation/condition shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test lin-rect,lined-rectangle,lin-proc,lined-process,shaded-process  > All lin-rect,lined-rectangle,lin-proc,lined-process,shaded-process should render same shape"
+description: "Verifies that the `lin-rect`, `lined-rectangle`, `lin-proc`, `lined-process`, and `shaded-process` names all render the same lined/shaded-process rectangle shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

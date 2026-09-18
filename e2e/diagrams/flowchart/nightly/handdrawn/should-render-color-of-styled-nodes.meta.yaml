@@ -1,0 +1,5 @@
+description: "Verifies that combining a classDef with a direct style override correctly sets a node's fill, stroke, and text color, under the hand-drawn look."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "handdrawn"

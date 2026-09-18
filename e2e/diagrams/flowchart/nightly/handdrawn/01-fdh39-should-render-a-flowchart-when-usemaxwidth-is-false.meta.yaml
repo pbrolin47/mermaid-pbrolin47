@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-handDrawn.spec.js: rendering/flowchart/flowchart-handDrawn.spec.js > Flowchart HandDrawn > FDH39: should render a flowchart when useMaxWidth is false"
+description: "Verifies that a flowchart rendered with the hand-drawn look respects useMaxWidth set to false, sizing the SVG to its content instead of stretching to fill the container."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

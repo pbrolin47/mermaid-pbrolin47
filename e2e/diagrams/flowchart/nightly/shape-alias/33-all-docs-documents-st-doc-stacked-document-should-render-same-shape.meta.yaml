@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test docs,documents,st-doc,stacked-document  > All docs,documents,st-doc,stacked-document should render same shape"
+description: "Verifies that the `docs`, `documents`, `st-doc`, and `stacked-document` names all render the same stacked-document multi-document shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test fr-circ,framed-circle,stop  > All fr-circ,framed-circle,stop should render same shape"
+description: "Verifies that the `fr-circ`, `framed-circle`, and `stop` names all render the same framed-circle stop-point shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

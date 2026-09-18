@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test dbl-circ,double-circle  > All dbl-circ,double-circle should render same shape"
+description: "Verifies that the `dbl-circ` and `double-circle` names render the same double-circle stop-point shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

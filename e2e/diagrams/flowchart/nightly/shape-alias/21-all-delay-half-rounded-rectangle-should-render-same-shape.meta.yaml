@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test delay,half-rounded-rectangle  > All delay,half-rounded-rectangle should render same shape"
+description: "Verifies that the `delay` and `half-rounded-rectangle` names render the same half-rounded-rectangle delay shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

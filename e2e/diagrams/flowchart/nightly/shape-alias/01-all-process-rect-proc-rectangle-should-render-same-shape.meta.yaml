@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test process,rect,proc,rectangle  > All process,rect,proc,rectangle should render same shape"
+description: "Verifies that the `process`, `rect`, `proc`, and `rectangle` names all render the same standard process rectangle shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

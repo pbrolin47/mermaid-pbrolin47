@@ -1,0 +1,5 @@
+description: "Regression test verifying that dagre preserves the source order of sibling nodes fanned out via the & shorthand unless doing so would introduce additional edge crossings, in which case it may reorder them."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "dagre"

@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test lean-l,lean-left,out-in  > All lean-l,lean-left,out-in should render same shape"
+description: "Verifies that the `lean-l`, `lean-left`, and `out-in` names all render the same lean-left parallelogram used for data input/output."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

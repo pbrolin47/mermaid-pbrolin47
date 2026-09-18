@@ -1,0 +1,5 @@
+description: "Verifies labeled edges that cross between sibling subgraphs, including one edge that targets an entire subgraph directly rather than one of its internal nodes."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "dagre"

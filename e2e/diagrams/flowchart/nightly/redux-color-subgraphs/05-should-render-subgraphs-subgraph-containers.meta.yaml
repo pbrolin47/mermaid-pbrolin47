@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-redux-color-subgraphs.spec.ts: rendering/flowchart/flowchart-redux-color-subgraphs.spec.ts > Flowchart - Redux colour theme subgraphs > Theme: redux-color > should render subgraphs subgraph containers"
+description: "Renders five sibling subgraphs (Ingest, Transform, Store, Serve, Observe) chained in a top-to-bottom pipeline under the redux-color theme, checking that each top-level container - including one holding a database-shaped node - gets its own distinct themed background and border color."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

@@ -1,0 +1,5 @@
+description: "Regression test ensuring that node identifiers which merely contain the substring \\\"default\\\" (e.g. default-index.js) are not mistaken for the reserved default keyword during parsing, and render as ordinary nodes under dagre layout."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "dagre"

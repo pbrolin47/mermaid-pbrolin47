@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test bolt,com-link,lightning-bolt  > All bolt,com-link,lightning-bolt should render same shape"
+description: "Verifies that the `bolt`, `com-link`, and `lightning-bolt` names all render the same lightning-bolt communication-link shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

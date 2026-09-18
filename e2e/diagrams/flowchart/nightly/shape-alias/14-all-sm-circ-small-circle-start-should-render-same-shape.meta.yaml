@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test sm-circ,small-circle,start  > All sm-circ,small-circle,start should render same shape"
+description: "Verifies that the `sm-circ`, `small-circle`, and `start` names all render the same small-circle start-point shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

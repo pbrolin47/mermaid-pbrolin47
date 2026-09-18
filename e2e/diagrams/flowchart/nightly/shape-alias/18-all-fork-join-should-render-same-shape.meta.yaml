@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test fork,join  > All fork,join should render same shape"
+description: "Verifies that the `fork` and `join` names render the same filled-rectangle fork/join shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

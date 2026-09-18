@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test datastore,data-store  > All datastore,data-store should render same shape"
+description: "Verifies that the `datastore` and `data-store` names render the same data-store shape used in data-flow diagrams."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test flip-tri,manual-file,flipped-triangle  > All flip-tri,manual-file,flipped-triangle should render same shape"
+description: "Verifies that the `flip-tri`, `manual-file`, and `flipped-triangle` names all render the same flipped-triangle manual-file shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

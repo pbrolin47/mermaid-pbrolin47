@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test comment,brace-l  > All comment,brace-l should render same shape"
+description: "Verifies that the `comment` and `brace-l` names render the same left-facing curly-brace comment shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

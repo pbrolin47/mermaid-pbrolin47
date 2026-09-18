@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test win-pane,internal-storage,window-pane  > All win-pane,internal-storage,window-pane should render same shape"
+description: "Verifies that the `win-pane`, `internal-storage`, and `window-pane` names all render the same window-pane internal-storage shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

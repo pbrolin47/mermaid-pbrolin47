@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test tag-doc,tagged-document  > All tag-doc,tagged-document should render same shape"
+description: "Verifies that the `tag-doc` and `tagged-document` names render the same tagged-document shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

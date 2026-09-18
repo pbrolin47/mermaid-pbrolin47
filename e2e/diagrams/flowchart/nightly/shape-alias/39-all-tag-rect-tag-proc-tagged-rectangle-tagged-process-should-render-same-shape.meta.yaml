@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test tag-rect,tag-proc,tagged-rectangle,tagged-process  > All tag-rect,tag-proc,tagged-rectangle,tagged-process should render same shape"
+description: "Verifies that the `tag-rect`, `tag-proc`, `tagged-rectangle`, and `tagged-process` names all render the same tagged-rectangle process shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test notch-pent,loop-limit,notched-pentagon  > All notch-pent,loop-limit,notched-pentagon should render same shape"
+description: "Verifies that the `notch-pent`, `loop-limit`, and `notched-pentagon` names all render the same trapezoidal-pentagon loop-limit shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

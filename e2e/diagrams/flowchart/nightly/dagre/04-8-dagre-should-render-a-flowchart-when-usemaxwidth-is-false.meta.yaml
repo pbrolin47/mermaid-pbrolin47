@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-dagre.spec.js: rendering/flowchart/flowchart-dagre.spec.js > Flowchart Dagre > 8-dagre: should render a flowchart when useMaxWidth is false"
+description: "Verifies that a dagre-layout flowchart renders at its natural intrinsic size, without stretching to fill the container, when useMaxWidth is explicitly set to false."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

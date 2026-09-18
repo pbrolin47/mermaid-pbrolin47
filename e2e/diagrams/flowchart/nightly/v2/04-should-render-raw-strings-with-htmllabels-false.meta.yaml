@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-v2.spec.js: rendering/flowchart/flowchart-v2.spec.js > Flowchart v2 > when rendering unsupported markdown > should render raw strings with htmlLabels: false"
+description: "Verifies the same unsupported-markdown/raw-string label handling (literal comparisons, markdown-styled subgraph titles, list syntax in backtick labels, etc.) still renders correctly as plain SVG text when htmlLabels is set to false instead of the default true."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

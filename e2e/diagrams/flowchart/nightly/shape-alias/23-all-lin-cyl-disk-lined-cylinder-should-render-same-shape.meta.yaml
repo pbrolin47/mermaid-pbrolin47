@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test lin-cyl,disk,lined-cylinder  > All lin-cyl,disk,lined-cylinder should render same shape"
+description: "Verifies that the `lin-cyl`, `disk`, and `lined-cylinder` names all render the same lined-cylinder disk-storage shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"

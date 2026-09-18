@@ -1,0 +1,5 @@
+description: "Verifies that nodes using the new @{shape: diam} diamond shape syntax compute correct edge-intersection points with their diamond boundary under dagre layout, alongside the legacy {} rhombus shape used for the same decision-node pattern."
+tags:
+  - "nightly"
+  - "copied-from-catalogue"
+  - "dagre"

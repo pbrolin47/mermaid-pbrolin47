@@ -1,4 +1,4 @@
-description: "Converted from e2e/rendering/flowchart/flowchart-shape-alias.spec.ts: rendering/flowchart/flowchart-shape-alias.spec.ts > Test db,database,cylinder,cyl  > All db,database,cylinder,cyl should render same shape"
+description: "Verifies that the `db`, `database`, `cylinder`, and `cyl` names all render the same cylinder database-storage shape."
 tags:
   - "nightly"
   - "converted-from-rendering-catalogue"
