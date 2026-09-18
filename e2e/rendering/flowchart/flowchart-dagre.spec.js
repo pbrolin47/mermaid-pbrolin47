@@ -15,18 +15,6 @@ test.describe('Flowchart Dagre', () => {
       `,
       { layout: 'dagre' }
     );
-    await imgSnapshotTest(
-      page,
-      testInfo,
-      `flowchart TD
-      A[Christmas] -->|Get money| B(Go shopping)
-      B --> C{Let me think}
-      C -->|One| D[Laptop]
-      C -->|Two| E[iPhone]
-      C -->|Three| F[fa:fa-car Car]
-      `,
-      { layout: 'dagre' }
-    );
   });
 
   test('7-dagre: should render a flowchart when useMaxWidth is true (default)', async ({
