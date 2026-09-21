@@ -1,10 +1,18 @@
 ---
+description:
+  Verifies that style and linkStyle color declarations apply correctly across an
+  expanded set of node shapes (rectangle, round, stadium, subroutine, cylinder,
+  circle, asymmetric, rhombus, hexagon, both parallelogram variants, trapezoid
+  variants, and double circle), each paired red-to-blue across an edge with a
+  default link color.
 config:
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
   logLevel: 2
+tags:
+  - release
 ---
 flowchart LR
   A[red text] -->|default style| B(blue text)

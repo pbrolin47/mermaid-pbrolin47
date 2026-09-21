@@ -1,3 +1,0 @@
-description: 'Verifies that markdown-formatted strings (backtick syntax with bold text) work as subgraph titles, node labels, and edge labels within subgraphs, with htmlLabels enabled so the markdown is rendered via HTML foreignObject content.'
-tags:
-  - 'release'

@@ -1,5 +1,0 @@
-description: 'Verifies that the `trap-t`, `trapezoid-top`, and `manual` names all render the same trapezoid-base-top manual-operation shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

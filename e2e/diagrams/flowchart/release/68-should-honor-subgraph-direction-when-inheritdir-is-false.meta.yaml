@@ -1,3 +1,0 @@
-description: "Verifies that when the flowchart.inheritDir config is set to false, a subgraph without its own explicit `direction` statement (subgraph B) does not inherit the parent flowchart's overridden direction (LR), while a subgraph that does declare its own direction (subgraph A, TB) uses that instead."
-tags:
-  - 'release'

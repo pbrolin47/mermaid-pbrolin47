@@ -1,9 +1,17 @@
 ---
+description:
+  Verifies that a node named 'default' can still be targeted directly by its own
+  style directive independently of the classDef default class rule, under the
+  hand-drawn look.
 config:
   look: handDrawn
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - nightly
+  - copied-from-catalogue
+  - handdrawn
 ---
 flowchart TD
   classDef default fill:#a34

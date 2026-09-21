@@ -1,8 +1,14 @@
 ---
+description:
+  Verifies that classDef styles (background fill and text color) can be applied
+  to subgraph containers via `class` statements, not just to individual nodes,
+  using titled and untitled subgraphs with htmlLabels disabled.
 config:
   flowchart:
     htmlLabels: false
   fontFamily: courier
+tags:
+  - release
 ---
 graph LR
   subgraph id1 [title is set]

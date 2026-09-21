@@ -1,7 +1,14 @@
 ---
+description:
+  With htmlLabels enabled, verifies that `classDef default` styling is
+  automatically applied to every node with no explicit `class` assignment (B and
+  C), while nodes given an explicit class via `class A myClass1` and `class D
+  myClass2` use their own class styles instead.
 config:
   flowchart:
     htmlLabels: true
+tags:
+  - release
 ---
 graph TD
   A[myClass1] --> B[default] & C[default]

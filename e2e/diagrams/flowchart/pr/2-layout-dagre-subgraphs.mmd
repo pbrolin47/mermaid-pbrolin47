@@ -1,6 +1,15 @@
 ---
+description:
+  Cross-boundary subgraph layout under dagre — three subgraphs (Frontend,
+  Backend, Auth) where Frontend has an edge crossing into each of the other two.
+  Mirrors 3-layout-elk-subgraphs.mmd's structure exactly so the two only differ
+  by layout engine, not by diagram shape.
 config:
   layout: dagre
+tags:
+  - layout
+  - dagre
+  - subgraphs
 ---
 flowchart TD
   subgraph Frontend

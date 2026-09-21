@@ -1,10 +1,19 @@
 ---
+description:
+  Verifies dagre layout of nested subgraphs with edges entering and leaving at
+  multiple levels, including compound edges created with the & node-list syntax
+  that cross subgraph boundaries, plus a cycle back to a node outside the
+  subgraphs.
 config:
   layout: dagre
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart TB
   internet

@@ -1,3 +1,0 @@
-description: 'Verifies that the diagramPadding config option, set to 0, removes the outer padding around the whole rendered flowchart SVG.'
-tags:
-  - 'release'

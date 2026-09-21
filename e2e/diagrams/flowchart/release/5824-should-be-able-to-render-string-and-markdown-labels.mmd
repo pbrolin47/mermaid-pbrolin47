@@ -1,8 +1,15 @@
 ---
+description: >-
+  Regression test for GitHub issue #5824: mixes plain quoted-string node/edge
+  labels with markdown-formatted labels (backtick syntax containing bold text)
+  in the same flowchart, including a markdown-formatted subgraph title, to
+  verify both label styles coexist and render correctly.
 config:
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - release
 ---
 flowchart TB
   mermaid{"What is

@@ -1,9 +1,15 @@
 ---
+description:
+  Verifies that subgraph title text color respects the theme's titleColor
+  themeVariable when a custom base theme with darkMode enabled is set via a
+  frontmatter %%{init}%% directive, across two connected subgraphs.
 config:
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - release
 ---
 %%{init:{"theme":"base", "themeVariables": {"primaryColor":"#411d4e", "titleColor":"white", "darkMode":true}}}%%
 flowchart LR

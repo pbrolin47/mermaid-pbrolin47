@@ -1,5 +1,0 @@
-description: "Renders two sibling subgraphs (One, Two) under the redux-dark theme where a classDef recolors a node inside One and an inline style directive recolors the Two container itself, checking that explicit user styling overrides the theme's automatic subgraph coloring on a dark background."
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'redux-color-subgraphs'

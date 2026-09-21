@@ -1,10 +1,18 @@
 ---
+description:
+  Verifies that two parallel edges between the same pair of nodes, each carrying
+  a different label, are rendered distinctly without overlapping labels, inside
+  a subgraph laid out right-to-left.
 config:
   layout: dagre
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart RL
   subgraph one

@@ -1,5 +1,0 @@
-description: "Verifies that a node's shape and label are preserved across repeated references (via chained edges, style, and linkStyle) rather than being reset, under the hand-drawn look."
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

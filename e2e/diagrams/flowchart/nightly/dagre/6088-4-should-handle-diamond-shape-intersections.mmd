@@ -1,8 +1,16 @@
 ---
+description: >-
+  Duplicate of the diamond-shape-intersection baseline test: verifies @{shape:
+  diam} diamond nodes inside subgraphs compute correct edge-intersection points
+  alongside a legacy rhombus decision node, under dagre layout.
 config:
   layout: dagre
   flowchart:
     titleTopMargin: 0
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart LR
   subgraph s1["Untitled subgraph"]

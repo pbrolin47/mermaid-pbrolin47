@@ -1,5 +1,0 @@
-description: 'Verifies that CSS classes can set background and text color on both individual nodes and subgraphs, including a subgraph left without an explicit title, under the hand-drawn look.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

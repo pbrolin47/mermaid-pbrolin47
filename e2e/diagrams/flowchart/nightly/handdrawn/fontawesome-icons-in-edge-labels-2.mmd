@@ -1,10 +1,18 @@
 ---
+description:
+  Verifies that a subgraph containing a single node renders correctly with
+  custom subgraph fill, stroke, stroke-width, and text-color styling, under the
+  hand-drawn look.
 config:
   look: handDrawn
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - nightly
+  - copied-from-catalogue
+  - handdrawn
 ---
 graph TB
   subgraph bar[Bar]

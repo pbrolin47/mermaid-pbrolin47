@@ -1,5 +1,0 @@
-description: 'Verifies that the `trap-b`, `trapezoid-bottom`, and `priority` names all render the same trapezoid-base-bottom priority-action shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

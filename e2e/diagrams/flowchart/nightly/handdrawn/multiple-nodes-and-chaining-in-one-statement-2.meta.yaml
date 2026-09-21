@@ -1,5 +1,0 @@
-description: "Checks parsing of a chained, multi-node edge statement that combines an edge label, the '&' node-grouping syntax, and an inline class shorthand (:::exClass), under the hand-drawn look."
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

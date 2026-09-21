@@ -1,3 +1,0 @@
-description: 'Verifies that the shape-data directives @{ shape: rounded } and @{ shape: rect } correctly render a rounded-corner rectangle and a plain square-corner rectangle side by side, distinguishing the two rectangle variants introduced by the new shape config syntax.'
-tags:
-  - 'release'

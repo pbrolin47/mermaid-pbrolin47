@@ -1,6 +1,12 @@
 ---
+description:
+  Checks that subgraph titles which look like list headings (beginning with a
+  number and a period, such as '1. first' and '2. second') parse correctly both
+  when quoted and when left unquoted.
 config:
   fontFamily: courier
+tags:
+  - release
 ---
 graph TB
   subgraph "1. first"

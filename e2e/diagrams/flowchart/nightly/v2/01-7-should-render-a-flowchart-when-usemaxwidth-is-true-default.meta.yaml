@@ -1,5 +1,0 @@
-description: 'Verifies that a flowchart with a decision node, multiple branches, and a FontAwesome icon label fills its container width when useMaxWidth defaults to true, rather than rendering at its natural (smaller) size.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'v2'

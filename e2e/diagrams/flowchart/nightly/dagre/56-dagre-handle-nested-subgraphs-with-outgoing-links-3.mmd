@@ -1,10 +1,18 @@
 ---
+description:
+  Verifies labeled edges that cross between sibling subgraphs, including one
+  edge that targets an entire subgraph directly rather than one of its internal
+  nodes.
 config:
   layout: dagre
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart TB
   subgraph container_Beta

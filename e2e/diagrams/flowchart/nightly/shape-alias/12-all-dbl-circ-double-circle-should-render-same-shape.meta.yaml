@@ -1,5 +1,0 @@
-description: 'Verifies that the `dbl-circ` and `double-circle` names render the same double-circle stop-point shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

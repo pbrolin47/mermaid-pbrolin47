@@ -1,7 +1,14 @@
 ---
+description:
+  Verifies that stadium-shaped nodes correctly wrap very long or multi-line (via
+  <br/>) text labels onto many lines, growing tall, without the wrapped text
+  crossing the shape's rounded end-cap border, using non-html (SVG text) labels
+  and a monospace font.
 config:
   htmlLabels: false
   fontFamily: courier
+tags:
+  - release
 ---
 flowchart TD
   A([Short]) --> B([A long stadium label that wraps into many lines without losing its circular end caps or letting text cross the border])

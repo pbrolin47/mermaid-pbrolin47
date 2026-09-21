@@ -1,10 +1,18 @@
 ---
+description:
+  Verifies that per-node style directives (fill, stroke, stroke-width, dash
+  pattern) are applied correctly to individual nodes in a dagre-layout
+  flowchart.
 config:
   layout: dagre
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart LR
   id1(Start)-->id2(Stop)

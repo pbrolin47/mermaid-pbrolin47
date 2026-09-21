@@ -1,5 +1,0 @@
-description: "Checks that a subgraph can declare its own layout direction independent of the parent flowchart's direction, and that dagre lays out the nested subgraph accordingly."
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'dagre'

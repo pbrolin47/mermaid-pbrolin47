@@ -1,3 +1,0 @@
-description: 'Verifies that classDef class assignment (via :::someclass) and per-node style directives (style id1 fill:...) can both be applied simultaneously, including to a node whose label uses markdown bold formatting, with htmlLabels enabled.'
-tags:
-  - 'release'

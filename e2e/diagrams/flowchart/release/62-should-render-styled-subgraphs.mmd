@@ -1,9 +1,15 @@
 ---
+description:
+  Verifies that two independently styled subgraphs (distinct fill, stroke-width,
+  stroke, and text color each) render correctly alongside a dense web of edges
+  that cross subgraph boundaries and connect to nodes outside either subgraph.
 config:
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - release
 ---
 flowchart TB
   A

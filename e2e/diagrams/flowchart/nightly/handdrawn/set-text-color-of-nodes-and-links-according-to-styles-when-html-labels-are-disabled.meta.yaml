@@ -1,5 +1,0 @@
-description: 'Verifies that per-node and per-link color styling set via style and linkStyle directives is applied correctly to node text and edges across several node shapes, with HTML labels disabled, under the hand-drawn look.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

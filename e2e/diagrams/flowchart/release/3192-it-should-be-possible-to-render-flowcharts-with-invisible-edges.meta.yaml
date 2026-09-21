@@ -1,3 +1,0 @@
-description: 'Checks that the invisible-edge link syntax (~~~) connects two nodes for layout purposes without drawing any visible line or arrowhead between them.'
-tags:
-  - 'release'

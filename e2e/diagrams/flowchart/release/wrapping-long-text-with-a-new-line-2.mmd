@@ -1,7 +1,14 @@
 ---
+description:
+  Verifies that a markdown string node label containing very long text, an
+  inline bold/italic run, and an explicit blank-line paragraph break wraps
+  correctly onto multiple lines, with htmlLabels disabled so wrapping is
+  computed for SVG text rather than HTML.
 config:
   flowchart:
     titleTopMargin: 0
+tags:
+  - release
 ---
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart LR

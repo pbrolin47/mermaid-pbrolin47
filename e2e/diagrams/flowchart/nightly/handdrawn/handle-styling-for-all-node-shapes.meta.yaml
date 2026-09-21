@@ -1,5 +1,0 @@
-description: 'Verifies that per-node stroke, fill, and text-color styling plus a default link color apply correctly across all basic node shapes (rectangle, round, stadium, subroutine, cylinder, circle, asymmetric, rhombus, hexagon, and parallelogram), under the hand-drawn look.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

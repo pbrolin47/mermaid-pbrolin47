@@ -1,5 +1,0 @@
-description: 'Verifies that a simple flowchart with several node shapes and a FontAwesome icon in a node label renders correctly with HTML labels disabled, under the hand-drawn look.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

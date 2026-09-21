@@ -1,5 +1,0 @@
-description: 'Verifies that edges using extra-length arrow syntax (repeated dashes, dotted, and thick arrows) render with correspondingly longer minimum edge lengths, under the hand-drawn look with a fixed random seed.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

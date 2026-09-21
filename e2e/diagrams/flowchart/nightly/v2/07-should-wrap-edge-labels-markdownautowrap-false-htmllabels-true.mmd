@@ -1,8 +1,18 @@
 ---
+description:
+  Verifies that long plain-text and markdown node/edge labels stay unwrapped on
+  a single line (no automatic line breaks at spaces) when markdownAutoWrap is
+  explicitly set to false, even though htmlLabels is true. Split from a single
+  upstream test that rendered three config variants side by side into this
+  standalone fixture.
 config:
   markdownAutoWrap: false
   htmlLabels: true
 title: "Testing with {\"markdownAutoWrap\":false,\"htmlLabels\":true}"
+tags:
+  - nightly
+  - converted-from-rendering-catalogue
+  - v2
 ---
 flowchart TD
     A["This is a really long line of plain text that will autowrap and support \n newlines too."]

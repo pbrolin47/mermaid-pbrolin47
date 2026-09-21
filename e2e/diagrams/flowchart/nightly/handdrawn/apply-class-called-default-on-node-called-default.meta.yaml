@@ -1,5 +1,0 @@
-description: "Verifies that a classDef named default applies to all unstyled nodes, including one whose node id is literally 'default', without an id/class naming collision, under the hand-drawn look."
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

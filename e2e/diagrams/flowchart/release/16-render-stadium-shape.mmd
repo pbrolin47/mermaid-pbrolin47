@@ -1,8 +1,14 @@
 ---
+description:
+  Verifies that stadium-shaped nodes (`([...])`) render correctly, including a
+  label with several `<br />` line breaks, alongside click event bindings and
+  classDef-based styling.
 config:
   flowchart:
     htmlLabels: false
   fontFamily: courier
+tags:
+  - release
 ---
 graph TD
   A([stadium shape test])

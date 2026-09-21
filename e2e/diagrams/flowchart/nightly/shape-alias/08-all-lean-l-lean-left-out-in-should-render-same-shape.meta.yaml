@@ -1,5 +1,0 @@
-description: 'Verifies that the `lean-l`, `lean-left`, and `out-in` names all render the same lean-left parallelogram used for data input/output.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

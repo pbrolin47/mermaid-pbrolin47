@@ -1,5 +1,0 @@
-description: 'Verifies that a long markdown-string node label, including an explicit blank-line break and a very long paragraph, wraps correctly within the node, with htmlLabels disabled.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'dagre'

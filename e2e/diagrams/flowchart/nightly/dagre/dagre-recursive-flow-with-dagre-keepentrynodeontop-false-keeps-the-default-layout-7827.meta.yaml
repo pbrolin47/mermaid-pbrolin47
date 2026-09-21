@@ -1,5 +1,0 @@
-description: "Regression test (issue 7827) for a flowchart containing a cycle (a decision node looping back to an earlier node in the chain), verifying that with keepEntryNodeOnTop left at its default/false, the recursive flow lays out using dagre's normal (non-pinned) node placement."
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'dagre'

@@ -1,9 +1,16 @@
 ---
+description:
+  Verifies that a classDef's font-size property (30px) applied via the
+  `:::className` shorthand enlarges a node's label text independently of other
+  classDef-driven fill-color classes applied to sibling nodes, including on a
+  circle-shaped node.
 config:
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - release
 ---
 flowchart
   Node1:::class1 --> Node2:::class2

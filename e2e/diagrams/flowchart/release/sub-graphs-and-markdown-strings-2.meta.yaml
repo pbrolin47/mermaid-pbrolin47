@@ -1,3 +1,0 @@
-description: 'Verifies that markdown-formatted strings (backtick syntax with bold text) work as subgraph titles, node labels, and edge labels within subgraphs, with htmlLabels explicitly disabled so the markdown is rendered via SVG text spans instead of HTML.'
-tags:
-  - 'release'

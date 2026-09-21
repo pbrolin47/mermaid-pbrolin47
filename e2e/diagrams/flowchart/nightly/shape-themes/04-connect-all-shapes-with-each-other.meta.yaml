@@ -1,5 +1,0 @@
-description: "Fully interconnects the document, notched-pentagon, lined-cylinder, stacked-document, and half-rounded-rectangle node shapes (every shape linked to every other) under the 'neo' theme with the 'neo' look, verifying this batch of 5 shapes renders correctly and stays visually distinct under this theme/look combination."
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-themes'

@@ -1,5 +1,0 @@
-description: 'Verifies that the `hex`, `hexagon`, and `prepare` names all render the same hexagon preparation/condition shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

@@ -1,8 +1,15 @@
 ---
+description:
+  Verifies that a basic flowchart with square, round, and diamond decision
+  nodes, edge labels, and a FontAwesome icon in a node label renders correctly
+  when htmlLabels is explicitly disabled, forcing SVG text rendering instead of
+  foreignObject HTML labels.
 config:
   flowchart:
     htmlLabels: false
   fontFamily: courier
+tags:
+  - release
 ---
 graph TD
   A[Christmas] -->|Get money| B(Go shopping)

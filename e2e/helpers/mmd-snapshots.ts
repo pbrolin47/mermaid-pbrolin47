@@ -1,17 +1,17 @@
 import { globby } from 'globby';
-import { existsSync, readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { basename, join } from 'node:path';
 import { load } from 'js-yaml';
 
 export const DIAGRAMS_DIR = 'e2e/diagrams';
 
 /**
- * Free-form, test-tooling-only metadata for a fixture — kept separate from the
- * diagram's own YAML frontmatter (`config`/`title`/`displayMode`), which is
- * mermaid's rendering config and not a place to park test documentation. Not
- * validated beyond "is a YAML mapping": `description` and `tags` are the two
- * fields the runner currently does anything with, but authors can add others
- * (e.g. `relatedIssue`, `coveredShapes`) for humans reading the file.
+ * Free-form, test-tooling-only metadata read out of a fixture's own mermaid
+ * frontmatter, alongside mermaid's own recognized keys (`config`/`title`/
+ * `displayMode`, which the renderer consumes and this reader ignores).
+ * `description` and `tags` are the two fields the runner currently does
+ * anything with, but authors can add others (e.g. `relatedIssue`,
+ * `coveredShapes`) for humans reading the file.
  */
 export interface FixtureMetadata {
   description?: string;
@@ -19,35 +19,56 @@ export interface FixtureMetadata {
   [key: string]: unknown;
 }
 
-/** Sidecar path for a fixture's metadata */
-export const metadataPath = (relativePath: string, diagramsDir = DIAGRAMS_DIR): string =>
-  join(diagramsDir, relativePath.replace(/\.mmd$/i, '.meta.yaml'));
+export const fixturePath = (relativePath: string, diagramsDir = DIAGRAMS_DIR): string =>
+  join(diagramsDir, relativePath);
+
+// Mirrors packages/mermaid/src/diagram-api/regexes.ts frontMatterRegex. Kept
+// independent so this test helper doesn't reach into the mermaid package,
+// but must stay in sync with it.
+const FRONT_MATTER_RE = /^([^\S\n\r]*)-{3}\s*[\n\r](.*?)[\n\r]\1-{3}\s*[\n\r]+/s;
 
 /**
- * Reads a fixture's sidecar metadata file, if one exists. Returns `undefined`
- * when there is none — that is the expected, unremarkable case for most
- * fixtures today, not an error. A *malformed* metadata file (bad YAML, or YAML
- * that isn't a mapping) throws rather than being silently discarded, since
+ * Reads a fixture's own YAML frontmatter, if it has one, and pulls out the
+ * test-tooling fields (`description`, `tags`). Returns `undefined` when the
+ * fixture has no frontmatter, or its frontmatter carries neither field (e.g.
+ * a fixture whose frontmatter only sets mermaid `config`) — that is the
+ * expected, unremarkable case for many fixtures, not an error. Frontmatter
+ * that isn't a YAML mapping throws rather than being silently ignored, since
  * that means someone got the file wrong and would want to know.
  */
 export const readFixtureMetadata = (
   relativePath: string,
   diagramsDir = DIAGRAMS_DIR
 ): FixtureMetadata | undefined => {
-  const path = metadataPath(relativePath, diagramsDir);
-  if (!existsSync(path)) {
+  const path = fixturePath(relativePath, diagramsDir);
+  const match = FRONT_MATTER_RE.exec(readFileSync(path, 'utf8'));
+  if (!match) {
     return undefined;
   }
-  const parsed: unknown = load(readFileSync(path, 'utf8'));
+
+  const indent = match[1];
+  const yamlBody = indent
+    ? match[2]
+        .split('\n')
+        .map((line) => (line.startsWith(indent) ? line.slice(indent.length) : line))
+        .join('\n')
+    : match[2];
+
+  const parsed: unknown = load(yamlBody);
   if (parsed === null || parsed === undefined) {
-    return {};
+    return undefined;
   }
   if (typeof parsed !== 'object' || Array.isArray(parsed)) {
     throw new Error(
-      `Fixture metadata at ${path} must be a YAML mapping, got: ${JSON.stringify(parsed)}`
+      `Frontmatter at ${path} must be a YAML mapping, got: ${JSON.stringify(parsed)}`
     );
   }
-  return parsed as FixtureMetadata;
+
+  const { description, tags } = parsed as FixtureMetadata;
+  if (description === undefined && tags === undefined) {
+    return undefined;
+  }
+  return { description, tags };
 };
 
 export interface FixtureTree {
@@ -86,9 +107,6 @@ export const buildFixtureTree = (relativePaths: readonly string[]): FixtureTree 
 export const collectMmdFixtures = async (diagramsDir = DIAGRAMS_DIR): Promise<string[]> => {
   return globby('**/*.mmd', { cwd: diagramsDir, onlyFiles: true });
 };
-
-export const fixturePath = (relativePath: string, diagramsDir = DIAGRAMS_DIR): string =>
-  join(diagramsDir, relativePath);
 
 /**
  * Mirrors the snapshot-name flattening in helpers/util.ts: the screenshot name

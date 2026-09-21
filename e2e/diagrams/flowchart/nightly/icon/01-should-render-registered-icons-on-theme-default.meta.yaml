@@ -1,5 +1,0 @@
-description: "Verifies that a custom icon registered via mermaid's icon-pack API (fa:fa-bell, not the live Font Awesome library) renders correctly inside a single node label under the default theme."
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'icon'

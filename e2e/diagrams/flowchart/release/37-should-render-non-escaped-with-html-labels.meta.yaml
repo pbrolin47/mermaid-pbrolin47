@@ -1,3 +1,0 @@
-description: "Verifies that with htmlLabels enabled and securityLevel set to loose, an HTML tag inside a node label's quoted string (<strong>Haiya</strong>) is rendered as actual formatted HTML rather than escaped text."
-tags:
-  - 'release'

@@ -1,4 +1,9 @@
 ---
+description:
+  Comprehensive styling test covering nearly every classic flowchart node shape
+  (rectangle, stadium, subroutine, cylinder, circle, tag, rhombus, hexagon,
+  parallelogram/trapezoid variants, double circle), each paired with a style
+  directive and a linkStyle default edge color override, under dagre layout.
 config:
   layout: dagre
   htmlLabels: true
@@ -6,6 +11,10 @@ config:
     htmlLabels: true
   securityLevel: loose
   logLevel: 2
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart LR
   A[red text] -->|default style| B(blue text)

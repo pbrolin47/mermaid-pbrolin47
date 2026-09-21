@@ -1,5 +1,0 @@
-description: 'Comprehensive styling test covering nearly every classic flowchart node shape (rectangle, stadium, subroutine, cylinder, circle, tag, rhombus, hexagon, parallelogram/trapezoid variants, double circle), each paired with a style directive and a linkStyle default edge color override, under dagre layout.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'dagre'

@@ -1,9 +1,15 @@
 ---
+description:
+  Verifies that per-node `style` statements apply fill, stroke, stroke-width,
+  text color, and stroke-dasharray to individual round-edged nodes, using the
+  legacy `graph` keyword rather than `flowchart`.
 config:
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - release
 ---
 graph LR
   id1(Start)-->id2(Stop)

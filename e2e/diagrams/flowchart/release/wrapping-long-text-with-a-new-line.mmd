@@ -1,7 +1,14 @@
 ---
+description:
+  Verifies that a markdown string node label containing very long text, an
+  inline bold/italic run, and an explicit blank-line paragraph break wraps
+  correctly onto multiple lines, with htmlLabels enabled so wrapping is computed
+  for HTML foreignObject content.
 config:
   flowchart:
     titleTopMargin: 0
+tags:
+  - release
 ---
 %%{init: {"flowchart": {"htmlLabels": true}} }%%
 flowchart LR

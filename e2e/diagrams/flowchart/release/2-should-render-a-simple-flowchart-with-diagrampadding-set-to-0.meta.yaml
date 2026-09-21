@@ -1,3 +1,0 @@
-description: "Verifies that setting the `flowchart.diagramPadding` config option to 0 removes the padding around the rendered flowchart's outer SVG viewport."
-tags:
-  - 'release'

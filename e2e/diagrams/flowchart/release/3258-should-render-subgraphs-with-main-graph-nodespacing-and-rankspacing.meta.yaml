@@ -1,3 +1,0 @@
-description: 'Checks that an extremely small nodeSpacing/rankSpacing config value (1) set at the top-level flowchart config is honored, exercising the same subgraph-with-explicit-direction layout as the large-spacing counterpart but at the opposite extreme.'
-tags:
-  - 'release'

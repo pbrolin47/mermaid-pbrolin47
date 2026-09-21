@@ -1,3 +1,0 @@
-description: 'Tests the same subgraph-to-subgraph link and cross-subgraph node link pattern as the analogous TB/RL fixtures (S1 --> S2 plus sub1 --> sub4), but with the flowchart set to BT (bottom-to-top) direction.'
-tags:
-  - 'release'

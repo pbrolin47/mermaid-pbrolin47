@@ -1,5 +1,0 @@
-description: 'Verifies that long plain-text and markdown node/edge labels stay unwrapped on a single line (no automatic line breaks at spaces) when markdownAutoWrap is explicitly set to false, even though htmlLabels is true. Split from a single upstream test that rendered three config variants side by side into this standalone fixture.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'v2'

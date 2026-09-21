@@ -1,5 +1,0 @@
-description: "Verifies that '%%' comment lines in flowchart source are ignored and do not affect rendering, under the hand-drawn look."
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

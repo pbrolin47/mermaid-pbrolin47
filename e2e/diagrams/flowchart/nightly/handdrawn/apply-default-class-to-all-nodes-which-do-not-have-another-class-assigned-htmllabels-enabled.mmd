@@ -1,8 +1,16 @@
 ---
+description:
+  Verifies that a classDef named default is automatically applied to every node
+  without an explicit class assignment, while nodes with explicit classes keep
+  their own styling, with HTML labels enabled, under the hand-drawn look.
 config:
   look: handDrawn
   flowchart:
     htmlLabels: true
+tags:
+  - nightly
+  - copied-from-catalogue
+  - handdrawn
 ---
 graph TD
   A[myClass1] --> B[default] & C[default]

@@ -1,5 +1,0 @@
-description: 'Verifies that the `f-circ`, `junction`, and `filled-circle` names all render the same filled-circle junction shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

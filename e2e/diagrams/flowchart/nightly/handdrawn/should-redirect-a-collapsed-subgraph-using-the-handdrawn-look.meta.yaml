@@ -1,5 +1,0 @@
-description: "Verifies that a subgraph collapsed via the '@{ view: collapsed }' metadata redirects its incoming edge to the collapsed subgraph node correctly, under the hand-drawn look."
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

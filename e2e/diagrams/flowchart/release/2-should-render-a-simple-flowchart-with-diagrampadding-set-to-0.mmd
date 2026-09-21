@@ -1,7 +1,12 @@
 ---
+description:
+  Verifies that setting the `flowchart.diagramPadding` config option to 0
+  removes the padding around the rendered flowchart's outer SVG viewport.
 config:
   flowchart:
     diagramPadding: 0
+tags:
+  - release
 ---
 flowchart TD
   A[Christmas] -->|Get money| B(Go shopping)

@@ -1,5 +1,0 @@
-description: 'Verifies that the flowchart diagramPadding configuration option can be set to zero, removing the padding around the rendered diagram, under the hand-drawn look.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'handdrawn'

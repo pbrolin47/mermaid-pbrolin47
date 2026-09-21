@@ -1,5 +1,0 @@
-description: 'Verifies that a flowchart rendered with the hand-drawn look respects useMaxWidth set to false, sizing the SVG to its content instead of stretching to fill the container.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'handdrawn'

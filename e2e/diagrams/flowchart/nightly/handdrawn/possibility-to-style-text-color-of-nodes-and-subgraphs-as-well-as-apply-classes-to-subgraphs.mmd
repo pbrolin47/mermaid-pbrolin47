@@ -1,9 +1,17 @@
 ---
+description:
+  Verifies that CSS classes can set background and text color on both individual
+  nodes and subgraphs, including a subgraph left without an explicit title,
+  under the hand-drawn look.
 config:
   look: handDrawn
   flowchart:
     htmlLabels: false
   fontFamily: courier
+tags:
+  - nightly
+  - copied-from-catalogue
+  - handdrawn
 ---
 graph LR
   subgraph id1 [title is set]

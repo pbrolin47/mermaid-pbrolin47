@@ -1,5 +1,0 @@
-description: 'Verifies that the `process`, `rect`, `proc`, and `rectangle` names all render the same standard process rectangle shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

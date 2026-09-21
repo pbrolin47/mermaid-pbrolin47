@@ -1,3 +1,0 @@
-description: 'Verifies that stadium-shaped nodes (`([...])`) render correctly, including a label with several `<br />` line breaks, alongside click event bindings and classDef-based styling.'
-tags:
-  - 'release'

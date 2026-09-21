@@ -1,5 +1,0 @@
-description: 'Documents a known dagre layout quirk (flagged by an inline source comment): reordering the labeled edge that crosses into another subgraph relative to its sibling edges changes the resulting layout, illustrating edge-order sensitivity for nested subgraph connections.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'dagre'

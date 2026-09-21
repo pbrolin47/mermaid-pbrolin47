@@ -1,8 +1,16 @@
 ---
+description:
+  Verifies that markdown-string formatting (bold text via **) works not only in
+  node and edge labels but also in a subgraph's own title, with htmlLabels
+  disabled.
 config:
   layout: dagre
   flowchart:
     titleTopMargin: 0
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 flowchart LR

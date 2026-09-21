@@ -1,9 +1,16 @@
 ---
+description:
+  Regression test ensuring that long word-wrapped labels with no explicit line
+  breaks, where every wrapped line fills the configured width, are not clipped
+  by the wavy bottom edge of doc, docs, lin-doc, and tag-doc shapes, whose wave
+  dips a full amplitude below the shape's bounding box.
 config:
   fontFamily: courier
   flowchart:
     wrappingWidth: 120
     minNodeWidth: 120
+tags:
+  - release
 ---
 %% The wavy bottom edge dips a full amplitude below the page, so the last line has to clear
 %% it. Labels here have no explicit line breaks and every line fills the width, which is the

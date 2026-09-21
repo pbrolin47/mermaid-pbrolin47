@@ -1,10 +1,18 @@
 ---
+description: >-
+  Verifies that hexagon-shaped node labels correctly render literal single
+  quotes as well as the #quot; character-reference escape sequence for double
+  quotes, with htmlLabels enabled.
 config:
   layout: dagre
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart TB
   a{{"Lorem 'ipsum' dolor 'sit' amet, 'consectetur' adipiscing 'elit'."}}

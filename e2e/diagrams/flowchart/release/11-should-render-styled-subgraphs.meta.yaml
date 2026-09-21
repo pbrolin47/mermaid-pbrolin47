@@ -1,3 +1,0 @@
-description: "Verifies that `style` directives applied to subgraph ids (fill, stroke-width, stroke, color) correctly style the subgraph's background and border, while nodes cross-link into and out of two separately styled subgraphs plus a node outside either."
-tags:
-  - 'release'

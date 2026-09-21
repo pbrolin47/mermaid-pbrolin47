@@ -1,5 +1,0 @@
-description: 'Verifies that the `db`, `database`, `cylinder`, and `cyl` names all render the same cylinder database-storage shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

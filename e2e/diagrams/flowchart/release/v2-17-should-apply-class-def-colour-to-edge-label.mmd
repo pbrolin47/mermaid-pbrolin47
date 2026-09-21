@@ -1,3 +1,12 @@
+---
+description:
+  Verifies that a classDef style (fill, stroke, color, stroke-dasharray) can be
+  applied to an edge's label by assigning a class to the edge itself, using the
+  edge-id syntax (link@-- ... -->) introduced to let edges be targeted
+  independently of their endpoint nodes.
+tags:
+  - release
+---
 graph LR
   id1(Start) link@-- "Label" -->id2(Stop)
   style id1 fill:#f9f,stroke:#333,stroke-width:4px

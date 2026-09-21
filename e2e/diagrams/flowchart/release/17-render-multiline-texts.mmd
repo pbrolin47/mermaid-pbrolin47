@@ -1,8 +1,15 @@
 ---
+description:
+  Verifies that all three spellings of the HTML line-break tag (`<br>`, `<br/>`,
+  `<br />`) are treated identically and produce multi-line text in both node
+  labels and edge labels when htmlLabels is disabled, with linkStyle applied to
+  the resulting edges.
 config:
   flowchart:
     htmlLabels: false
   fontFamily: courier
+tags:
+  - release
 ---
 graph LR
   A1[Multi<br>Line] -->|Multi<br>Line| B1(Multi<br>Line)

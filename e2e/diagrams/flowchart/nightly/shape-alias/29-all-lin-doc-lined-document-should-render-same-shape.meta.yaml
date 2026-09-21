@@ -1,5 +1,0 @@
-description: 'Verifies that the `lin-doc` and `lined-document` names render the same lined-document shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

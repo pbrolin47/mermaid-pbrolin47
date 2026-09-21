@@ -1,5 +1,0 @@
-description: 'Verifies that the `doc` and `document` names render the same wave-edged document shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

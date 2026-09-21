@@ -1,3 +1,0 @@
-description: 'Legacy v2-style regression test verifying that stadium-shaped nodes render correctly with wrapped multi-line labels, clickable link/callback events (click ... href and click ... callback), and classDef-based fill styling applied via a class, with htmlLabels disabled.'
-tags:
-  - 'release'

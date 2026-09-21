@@ -1,9 +1,16 @@
 ---
+description:
+  Verifies that '%%' comment lines in flowchart source are ignored and do not
+  affect rendering, under the hand-drawn look.
 config:
   look: handDrawn
   flowchart:
     htmlLabels: false
   fontFamily: courier
+tags:
+  - nightly
+  - copied-from-catalogue
+  - handdrawn
 ---
 graph TD
   A[Christmas] -->|Get money| B(Go shopping)

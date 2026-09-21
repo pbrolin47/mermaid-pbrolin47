@@ -1,5 +1,0 @@
-description: 'Checks that edges can be animated (slow or fast) via the @{ animation: ... } edge syntax alongside custom edge stroke styling, under the hand-drawn look.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'handdrawn'

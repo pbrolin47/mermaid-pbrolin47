@@ -1,5 +1,0 @@
-description: 'Verifies that the `docs`, `documents`, `st-doc`, and `stacked-document` names all render the same stacked-document multi-document shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

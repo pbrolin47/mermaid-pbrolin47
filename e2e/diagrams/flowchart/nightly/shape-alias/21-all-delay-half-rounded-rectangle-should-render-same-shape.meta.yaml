@@ -1,5 +1,0 @@
-description: 'Verifies that the `delay` and `half-rounded-rectangle` names render the same half-rounded-rectangle delay shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

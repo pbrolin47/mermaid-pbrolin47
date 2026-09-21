@@ -1,5 +1,0 @@
-description: 'Verifies that the `folder` and `directory` names render the same folder/directory shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

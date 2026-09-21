@@ -1,3 +1,0 @@
-description: "Verifies that a subgraph can set its internal layout direction to 'TD' (an alias for top-down/TB) independently of the outer flowchart's LR direction."
-tags:
-  - 'release'

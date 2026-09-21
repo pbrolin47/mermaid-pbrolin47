@@ -1,5 +1,0 @@
-description: 'Verifies that the `extract`, `tri`, and `triangle` names all render the same triangle extract shape.'
-tags:
-  - 'nightly'
-  - 'converted-from-rendering-catalogue'
-  - 'shape-alias'

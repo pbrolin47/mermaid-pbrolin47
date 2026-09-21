@@ -1,5 +1,0 @@
-description: 'Verifies dagre layout, in the right-to-left (RL) direction, of two sibling subgraphs connected by both a subgraph-to-subgraph edge and a direct node-to-node edge that crosses between their internals.'
-tags:
-  - 'nightly'
-  - 'copied-from-catalogue'
-  - 'dagre'

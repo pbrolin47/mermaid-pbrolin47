@@ -1,10 +1,18 @@
 ---
+description:
+  Duplicate right-to-left (RL) case verifying dagre layout of two sibling
+  subgraphs connected by both a subgraph-to-subgraph edge and a direct
+  node-to-node edge that crosses between their internals.
 config:
   layout: dagre
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart RL
   subgraph S1

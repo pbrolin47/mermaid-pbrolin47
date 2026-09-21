@@ -1,3 +1,0 @@
-description: "Verifies that setting flowchart.curve to 'rounded' produces smoothly rounded corners on edges that make right-angle turns, including the branching edges from a decision node that later reconverge at a shared end node."
-tags:
-  - 'release'

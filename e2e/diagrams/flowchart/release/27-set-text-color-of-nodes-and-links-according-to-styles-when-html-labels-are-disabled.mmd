@@ -1,8 +1,16 @@
 ---
+description:
+  With htmlLabels disabled, verifies that per-node `style color` and per-edge
+  `linkStyle` color/stroke overrides (including a `linkStyle default` rule and
+  index-specific overrides) correctly change text and line colors across square,
+  round, parallelogram, diamond, hexagon, and stadium shaped nodes, using the
+  SVG text rendering path.
 config:
   flowchart:
     htmlLabels: false
   fontFamily: courier
+tags:
+  - release
 ---
 graph LR
   A[red<br>text] -->|red<br>text| B(blue<br>text)

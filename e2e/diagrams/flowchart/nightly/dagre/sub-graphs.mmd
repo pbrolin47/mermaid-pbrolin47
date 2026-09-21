@@ -1,8 +1,16 @@
 ---
+description:
+  Verifies rendering of an auto-generated/untitled subgraph alongside a decision
+  node branching into it, an edge from inside the subgraph out to a node outside
+  it, and a completely disconnected standalone node.
 config:
   layout: dagre
   flowchart:
     titleTopMargin: 0
+tags:
+  - nightly
+  - copied-from-catalogue
+  - dagre
 ---
 flowchart LR
   subgraph subgraph_ko6czgs5u["Untitled subgraph"]

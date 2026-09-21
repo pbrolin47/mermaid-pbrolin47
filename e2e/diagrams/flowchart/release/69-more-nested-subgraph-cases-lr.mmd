@@ -1,9 +1,15 @@
 ---
+description:
+  Tests edge resolution between two sibling subgraphs and their child nodes (a
+  subgraph-to-subgraph edge plus a subgraph-to-inner-node edge) laid out in the
+  left-to-right (LR) flowchart direction.
 config:
   htmlLabels: true
   flowchart:
     htmlLabels: true
   securityLevel: loose
+tags:
+  - release
 ---
 flowchart LR
   subgraph two
