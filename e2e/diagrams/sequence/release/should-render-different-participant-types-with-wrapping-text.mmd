@@ -1,4 +1,11 @@
 ---
+description: >-
+  Sequence diagram with `sequence.wrap: true` enabled, combining the typed
+  participant kinds (`boundary`, `control`, `entity`, `database`,
+  `collections`, `queue`) with long message texts that mix explicit
+  `<br/>` line breaks and text meant to auto-wrap, checking that automatic
+  wrapping and manual breaks both work across the different participant
+  shapes.
 config:
   sequence:
     wrap: true

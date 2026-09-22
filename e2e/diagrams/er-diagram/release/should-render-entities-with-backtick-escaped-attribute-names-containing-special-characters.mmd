@@ -1,4 +1,9 @@
 ---
+description: >-
+  HOTEL and ROOM entities use backtick-escaped attribute names containing
+  characters normally invalid in identifiers, such as dots (`geo.accuracy`,
+  `room.number`) and spaces (`check-in date`, `bed.type`), verifying the
+  backtick-escaping syntax for special-character attribute names.
 config:
   loglevel: 1
 ---

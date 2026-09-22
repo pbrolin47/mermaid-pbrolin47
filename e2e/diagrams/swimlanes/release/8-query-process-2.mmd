@@ -1,4 +1,11 @@
 ---
+description: >-
+  Same three-lane query-escalation flow as `query-process.mmd` (StatusSeeker
+  routes an incoming query up to "Tech Lead" and then "Head of Engineering"
+  until someone can answer), but with lanes declared in flow order
+  (StatusSeeker, then "Head of Engineering", then "Tech Lead") and using
+  plain `layout: swimlane` without the ignoreCrossLaneEdges/
+  optimizeRanksByCrossings tuning options.
 config:
   logLevel: 0
   flowchart:

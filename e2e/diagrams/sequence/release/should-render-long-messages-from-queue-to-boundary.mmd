@@ -1,3 +1,10 @@
+---
+description: >-
+  No-frontmatter sequence diagram between a `queue`-typed and a
+  `boundary`-typed participant, where a short message is sent first and
+  then the boundary shape replies with a very long message, checking
+  long-message wrapping against those two specific participant shapes.
+---
 sequenceDiagram
   participant Alice@{ "type" : "queue" }
   participant Bob@{ "type" : "boundary" }

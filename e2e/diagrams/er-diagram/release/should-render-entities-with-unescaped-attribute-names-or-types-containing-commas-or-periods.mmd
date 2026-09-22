@@ -1,4 +1,11 @@
 ---
+description: >-
+  HOTEL and ROOM declare attribute types containing an unescaped comma
+  inside parentheses (GEOMETRY(point,4326), DECIMAL(10,2)) and attribute
+  names containing an unescaped period (room.number, bed.type) without
+  backtick-escaping, checking the parser tolerates these special
+  characters directly - contrast with the sibling "backtick-escaped"
+  fixture, which requires escaping the same kind of characters.
 config:
   loglevel: 1
 ---

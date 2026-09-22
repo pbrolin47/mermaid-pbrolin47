@@ -1,3 +1,10 @@
+---
+description: >-
+  Regression test for issue #1060 — includes a task with a malformed
+  date ("2019-09-1", missing zero-padding) among many otherwise valid
+  tasks, to check parsing/rendering behavior when an invalid date is
+  encountered.
+---
 gantt
   excludes weekdays 2017-01-10
   title Projects Timeline

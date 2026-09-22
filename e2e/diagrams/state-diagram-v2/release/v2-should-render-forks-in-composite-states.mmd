@@ -1,4 +1,9 @@
 ---
+description: >-
+  The same fork/join pattern as v2-should-render-forks-and-joins.mmd
+  (`<<fork>>` splitting into State2/State3, `<<join>>` merging into
+  State4), but nested inside a composite state (TV) instead of at the top
+  level - tests fork/join rendering within a composite boundary.
 config:
   logLevel: 0
   fontFamily: courier
@@ -7,12 +12,12 @@ stateDiagram-v2
   [*]-->TV
 
   state TV {
-  state fork_state &lt;&lt;fork&gt;&gt;
+  state fork_state <<fork>>
   [*] --> fork_state
   fork_state --> State2
   fork_state --> State3
 
-  state join_state &lt;&lt;join&gt;&gt;
+  state join_state <<join>>
   State2 --> join_state
   State3 --> join_state
   join_state --> State4

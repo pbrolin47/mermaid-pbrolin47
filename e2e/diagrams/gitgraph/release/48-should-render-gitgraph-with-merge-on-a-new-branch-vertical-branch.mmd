@@ -1,4 +1,11 @@
 ---
+description: >-
+  LR-orientation gitgraph with parallelCommits: true where branch-A is
+  created off branch-B (itself created with an explicit order: 2) and
+  immediately merges main, before branch-B merges branch-A - testing a
+  merge performed on a freshly created branch. Despite the "vertical-
+  branch" file name this fixture uses LR orientation; compare with
+  release/49, its TB-orientation twin with otherwise identical content.
 config:
   gitGraph:
     parallelCommits: true

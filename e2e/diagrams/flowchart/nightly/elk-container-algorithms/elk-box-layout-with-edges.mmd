@@ -7,10 +7,6 @@ description:
   renders as `translate(undefined, NaN)` instead of falling back correctly.
 config:
   layout: elk.box
-tags:
-  - nightly
-  - copied-from-catalogue
-  - elk-container-algorithms
 ---
 %% elk.box places nodes but does not route edges. Every edge here relies on the
 %% straight-line fallback; without it the render throws on `points.filter`.

@@ -1,4 +1,8 @@
 ---
+description: >-
+  classDiagram combined with a custom 'base' theme applied via a themeVariables init
+  directive (custom primary/line/secondary colors), covering the main relationship types, an
+  interface annotation, and member visibility modifiers.
 config:
   logLevel: 1
   htmlLabels: true
@@ -18,7 +22,7 @@ config:
   }%%
   classDiagram
   Class01 <|-- AveryLongClass : Cool
-  &lt;&lt;interface&gt;&gt; Class01
+  <<interface>> Class01
   Class03 *-- Class04
   Class05 o-- Class06
   Class07 .. Class08
@@ -37,7 +41,7 @@ config:
   Class01 : #int protectedMarmoset
   Class08 <--> C2: Cool label
   class Class10 {
-    &lt;&lt;service&gt;&gt;
+    <<service>>
     int id
     test()
   }

@@ -1,4 +1,9 @@
 ---
+description: >-
+  Same generic-class diagram as its numbered siblings, but written using the
+  `classDiagram-v2` alias and disabling HTML labels via the nested
+  `flowchart.htmlLabels: false` config key rather than the top-level
+  `htmlLabels` key.
 config:
   logLevel: 1
   flowchart:
@@ -11,7 +16,7 @@ classDiagram-v2
   Class01 : int gorilla
   Class08 <--> C2: Cool label
   class Class10~T~ {
-    &lt;&lt;service&gt;&gt;
+    <<service>>
     int id
     test()
   }
