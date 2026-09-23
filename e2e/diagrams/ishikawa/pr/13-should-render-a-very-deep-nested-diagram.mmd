@@ -1,3 +1,14 @@
+---
+description: >-
+  Stress test with twelve top-level cause branches under the "Very deep"
+  effect (several, like 1-1/1-2, are flat siblings of "Cause 1" rather than
+  its children because they share its indentation). The Cause 3 branch
+  chains seven levels deep through a single line of descendants, the Cause 4
+  and Cause 6 branches are wide (eight and six children respectively at one
+  level), and one node ("2-2-2-1") is repeated as a duplicate sibling under
+  2-2-2 — exercising extreme depth, breadth, and duplicate-label handling
+  together.
+---
 ishikawa-beta
   Very deep
   Cause 1
