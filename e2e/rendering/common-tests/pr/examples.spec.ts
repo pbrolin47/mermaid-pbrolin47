@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
-import { imgSnapshotTest } from '../../../helpers/util.js';
-import { diagramData } from '../../../../packages/examples/src/index.js';
+import { imgSnapshotTest } from '../../../helpers/util.ts';
+import { diagramData } from '../../../../packages/examples/src/index.ts';
 
 test.describe('diagram examples', () => {
   for (const diagram of diagramData) {

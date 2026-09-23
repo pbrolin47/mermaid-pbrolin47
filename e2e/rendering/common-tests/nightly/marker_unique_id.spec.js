@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { urlSnapshotTest, assertNoDuplicateIds } from '../../helpers/util.ts';
+import { urlSnapshotTest, assertNoDuplicateIds } from '../../../helpers/util.ts';
 
 test.describe('Marker Unique IDs Per Diagram', () => {
   test('should render a blue arrow tip in second digram', async ({ page }, testInfo) => {

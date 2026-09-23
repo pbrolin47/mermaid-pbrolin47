@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { assertNoDuplicateIds } from '../../helpers/util.ts';
+import { assertNoDuplicateIds } from '../../../helpers/util.ts';
 
 test.describe('Multi-Diagram Unique IDs', () => {
   test('should have no duplicate element IDs across all diagrams on the page', async ({ page }) => {

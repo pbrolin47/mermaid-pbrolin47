@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { imgSnapshotTest } from '../../helpers/util.ts';
+import { imgSnapshotTest } from '../../../helpers/util.ts';
 
 test('themeCSS - should work', async ({ page }, testInfo) => {
   const themeCSS = `.nodeLabel {

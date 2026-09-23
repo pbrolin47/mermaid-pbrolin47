@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 
-import { imgSnapshotTest } from '../../../helpers/util.js';
+import { imgSnapshotTest } from '../../../helpers/util.ts';
 
 const looks = ['neo'] as const;
 const themes = ['neo'] as const;

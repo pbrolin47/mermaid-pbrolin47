@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 
-import { imgSnapshotTest } from '../../../helpers/util.js';
-import { registerIconShapeTests } from '../../../helpers/iconShapeTests.js';
+import { imgSnapshotTest } from '../../../helpers/util.ts';
+import { registerIconShapeTests } from '../../../helpers/iconShapeTests.ts';
 
 // Base form (no explicit `form`). The square/circle/rounded slices of the same
 // matrix live in sibling iconShape-<form>.spec.ts files so the whole matrix is
