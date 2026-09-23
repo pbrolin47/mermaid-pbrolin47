@@ -1,5 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
-import { renderGraph } from '../helpers/util.ts';
+import { renderGraph } from '../../../helpers/util.js';
 
 /**
  * Two diagrams on one page must resolve their appearance independently: `er` opts in to

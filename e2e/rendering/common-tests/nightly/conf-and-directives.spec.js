@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { imgSnapshotTest, urlSnapshotTest } from '../helpers/util.ts';
+import { imgSnapshotTest, urlSnapshotTest } from '../../helpers/util.ts';
 
 // These precedence tests stay in TS rather than becoming .mmd fixtures: they
 // pass site config through imgSnapshotTest's 4th argument (mermaid.initialize())
