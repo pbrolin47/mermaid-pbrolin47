@@ -4,6 +4,7 @@ import {
   assertUniqueSnapshotNames,
   buildFixtureTree,
   collectMmdFixtures,
+  DIAGRAMS_DIR,
   fixtureBaseName,
   fixturePath,
   readFixtureMetadata,
@@ -11,7 +12,14 @@ import {
 } from '../helpers/mmd-snapshots.ts';
 import { imgSnapshotTest } from '../helpers/util.ts';
 
-const fixtures = await collectMmdFixtures();
+// Set by CI (.github/workflows/e2e.yml) to 'pr' when a PR's e2e run is
+// scoped to the pr tier — narrows fixture collection to each diagram's
+// pr/ subfolder instead of every tier.
+const fixtureTier = process.env.MERMAID_E2E_FIXTURE_TIER;
+const fixtures = await collectMmdFixtures(
+  DIAGRAMS_DIR,
+  fixtureTier ? `*/${fixtureTier}/**/*.mmd` : undefined
+);
 // Fail fast if two fixtures would share a screenshot baseline (see helper).
 assertUniqueSnapshotNames(fixtures);
 const fixtureTree = buildFixtureTree(fixtures);
