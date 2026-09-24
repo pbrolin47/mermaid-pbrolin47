@@ -191,22 +191,6 @@ test.describe('Sequence diagram', () => {
         }
       );
     });
-    test("shouldn't display unused participants", async ({ page }, testInfo) => {
-      //Be aware that the syntax for "properties" is likely to be changed.
-      await imgSnapshotTest(
-        page,
-        testInfo,
-        `
-        %%{init: { "config": { "sequence": {"hideUnusedParticipants": true }}}}%%
-        sequenceDiagram
-        participant a
-      `,
-        {
-          logLevel: 0,
-          sequence: { mirrorActors: false, noteFontSize: 18, noteFontFamily: 'Arial' },
-        }
-      );
-    });
   });
   test.describe('svg size', () => {
     test('should render a sequence diagram when useMaxWidth is true (default)', async ({

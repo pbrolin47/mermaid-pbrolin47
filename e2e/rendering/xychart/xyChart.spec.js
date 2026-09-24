@@ -107,20 +107,8 @@ test.describe('XY Chart', () => {
     await expect(page.locator('g.legend rect')).toHaveCount(1);
   });
 
-  test('should use the correct distances between data points', async ({ page }, testInfo) => {
-    await imgSnapshotTest(
-      page,
-      testInfo,
-      `
-      xychart
-        x-axis 0 --> 2
-        line [0, 1, 0, 1]
-        bar [1, 0, 1, 0]
-      `,
-      {}
-    );
-    await expect(page.locator('svg')).toBeVisible();
-  });
+  // "should use the correct distances between data points" used to live here —
+  // now a fixture: e2e/diagrams/xychart/release/correct-distances-between-data-points.mmd
 
   test('should render data labels within each bar in the vertical xy-chart', async ({
     page,

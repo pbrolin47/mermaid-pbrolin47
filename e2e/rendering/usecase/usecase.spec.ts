@@ -70,33 +70,6 @@ securely\`") &lt;&lt;Main&gt;&gt;:::critical
   assocRel@{ animate: true, animation: fast }
 `;
 
-// No classDef or style here on purpose — the theme variables must supply every colour.
-const THEMED_DIAGRAM = `usecase-beta
-  accTitle: Themed use case example
-  accDescr: Exercises every themed element without any inline style overrides.
-  actor Normal("Normal User")
-  actor Hollow@{ type: hollow }
-  actor Business@{ business: true }
-
-  systemBoundary "Authentication System"
-    Login("Sign in")
-    Reset[Reset password]
-  end
-
-  Checkout("Checkout")@{ business: true }
-  Normal --> Login
-  Hollow --o Reset
-  Business --> Checkout
-  Login ..> : include Checkout
-  note for Login "Requires an active session"
-
-  json Payload@{
-    "region": "eu",
-    "tags": ["Red", "Green"]
-  }
-  Checkout --> Payload
-`;
-
 // Render without a screenshot — used by the behaviour tests below that assert on
 // the DOM/CSS rather than the rendered pixels.
 const renderForDom = async (
@@ -458,59 +431,7 @@ test.describe('Usecase diagram', () => {
     ]);
   });
 
-  test('keeps a small representative visual snapshot', async ({ page }, testInfo) => {
-    await imgSnapshotTest(page, testInfo, FULL_DIAGRAM, {
-      usecase: { diagramPadding: 24, useMaxWidth: true },
-    });
-  });
-
-  test('keeps the complete hand-drawn rendering contract covered', async ({ page }, testInfo) => {
-    await imgSnapshotTest(page, testInfo, FULL_DIAGRAM, {
-      look: 'handDrawn',
-      usecase: { diagramPadding: 24, useMaxWidth: true },
-    });
-  });
-
-  test('keeps empty-diagram rendering covered without duplicating feature snapshots', async ({
-    page,
-  }, testInfo) => {
-    await imgSnapshotTest(page, testInfo, 'usecase-beta');
-  });
-
-  // THEMED_DIAGRAM deliberately carries no classDef/style, so every colour on screen comes
-  // from a theme variable. clusterBkg (system boundary), noteBkgColor/noteBorderColor (note),
-  // and the actor/use-case fills are the ones most likely to regress on a dark background.
-  //
-  // The two colour themes are in the list because they are the only ones that set the
-  // `usecase*` role variables: on them an actor, a use case and a boundary each render in
-  // their own colour, and `include` and `extend` separate by hue rather than by dash alone.
-  // Every other theme leaves those variables unset and must render exactly as before.
-  for (const theme of [
-    'default',
-    'dark',
-    'forest',
-    'neutral',
-    'base',
-    'redux-color',
-    'redux-dark-color',
-  ] as const) {
-    test(`renders every themed element on the ${theme} theme`, async ({ page }, testInfo) => {
-      await imgSnapshotTest(page, testInfo, THEMED_DIAGRAM, {
-        theme,
-        usecase: { diagramPadding: 24, useMaxWidth: true },
-      });
-    });
-  }
-
-  // The opt-in scheme: every actor, use case and boundary takes its own slot from the
-  // theme's categorical palette instead of its role colour. Only the colour themes carry a
-  // palette, so those are the only two where this differs from the default.
-  for (const theme of ['redux-color', 'redux-dark-color'] as const) {
-    test(`rotates the palette per element on the ${theme} theme`, async ({ page }, testInfo) => {
-      await imgSnapshotTest(page, testInfo, THEMED_DIAGRAM, {
-        theme,
-        usecase: { diagramPadding: 24, useMaxWidth: true, colorScheme: 'rotate' },
-      });
-    });
-  }
+  // The 12 pure-visual tests that used to live here (the small/hand-drawn/
+  // empty-diagram snapshots, the 7-theme sweep, and the 2 palette-rotation
+  // renders) are now fixtures under e2e/diagrams/usecase/release/.
 });

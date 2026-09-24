@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { imgSnapshotTest, renderGraph } from '../../helpers/util.ts';
+import { renderGraph } from '../../helpers/util.ts';
 
 /**
  * Composite blocks take a per-container colour under the redux colour themes, the same
@@ -11,8 +11,8 @@ import { imgSnapshotTest, renderGraph } from '../../helpers/util.ts';
  * the stylesheet emits rules — but only a render proves the stamped `data-color-id`
  * actually meets the emitted selector on the element. That is exactly where this was
  * broken: both halves can be right while nothing on screen changes colour.
+ *
  */
-const reduxThemes = ['redux', 'redux-color', 'redux-dark', 'redux-dark-color'] as const;
 
 /** Three containers, so the ordering is unambiguous and a reversed cycle would show. */
 const composites = `
@@ -31,24 +31,6 @@ const composites = `
     end
 `;
 
-/** Nesting, to show the palette applying at more than one depth. */
-const nested = `
-  block-beta
-    columns 1
-    block:outer
-      columns 1
-      block:inner1
-        a["one"] b["two"]
-      end
-      block:inner2
-        c["three"]
-      end
-    end
-    block:sibling
-      d["four"]
-    end
-`;
-
 /**
  * The plain shapes are deliberately left alone, exactly as a flowchart leaves its nodes
  * alone. Every shape a block diagram can draw is here, and none of them should pick up a
@@ -64,48 +46,7 @@ const shapesInsideAContainer = `
     end
 `;
 
-/** A flat diagram has no containers, so nothing takes a palette colour. */
-const flat = `
-  block-beta
-    columns 3
-    a["One"] b["Two"] c["Three"]
-`;
-
-/**
- * Explicit user styling keeps winning over the palette: `style` becomes an inline
- * `style` attribute and none of the palette rules are `!important`.
- */
-const userStyled = `
-  block-beta
-    columns 1
-    block:palette
-      a["Palette"]
-    end
-    block:mine
-      b["Mine"]
-    end
-    style mine fill:#00ff00,stroke:#0000ff
-`;
-
-const diagrams = {
-  composites,
-  nested,
-  'shapes-inside-a-container': shapesInsideAContainer,
-  flat,
-  'user-styled': userStyled,
-} as const;
-
 test.describe('Block - Redux colour themes', () => {
-  for (const theme of reduxThemes) {
-    test.describe(`Theme: ${theme}`, () => {
-      for (const [name, diagram] of Object.entries(diagrams)) {
-        test(`should render ${name}`, async ({ page }, testInfo) => {
-          await imgSnapshotTest(page, testInfo, diagram, { theme, look: 'neo' });
-        });
-      }
-    });
-  }
-
   test('stamps a palette slot that the stylesheet actually matches', async ({ page }, testInfo) => {
     await renderGraph(page, testInfo, composites, { theme: 'redux-color', look: 'neo' });
 

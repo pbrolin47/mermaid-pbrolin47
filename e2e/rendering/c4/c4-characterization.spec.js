@@ -23,24 +23,10 @@ UpdateElementStyle(c, $shape="cylinder")
     await expect(svg.locator('.node > rect')).toHaveCount(2);
   });
 
-  for (const shapesInRow of [2, 4]) {
-    test(`CHAR.update-layout-config should render ${shapesInRow} shapes per row`, async ({
-      page,
-    }, testInfo) => {
-      await imgSnapshotTest(
-        page,
-        testInfo,
-        `C4Context
-title UpdateLayoutConfig ($c4ShapeInRow=${shapesInRow})
-System(a, "A")
-System(b, "B")
-System(c, "C")
-System(d, "D")
-UpdateLayoutConfig($c4ShapeInRow="${shapesInRow}", $c4BoundaryInRow="1")
-        `
-      );
-    });
-  }
+  // CHAR.update-layout-config (shapesInRow 2 and 4) — pure visual renders with
+  // no DOM assertion, now fixtures:
+  // e2e/diagrams/c4/release/update-layout-config-2-shapes-per-row.mmd
+  // e2e/diagrams/c4/release/update-layout-config-4-shapes-per-row.mmd
 
   test('CHAR.tags should accept but not render $tags', async ({ page }, testInfo) => {
     await imgSnapshotTest(

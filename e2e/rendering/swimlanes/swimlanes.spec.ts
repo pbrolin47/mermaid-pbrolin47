@@ -408,15 +408,9 @@ test.describe('Swimlanes diagram', () => {
       await expect(defaultLane.locator('.swimlane-body path')).not.toHaveCount(0);
     });
 
-    for (const theme of ['redux-color', 'redux-dark-color'] as const) {
-      test(`renders coloured lanes under ${theme}`, async ({ page }, testInfo) => {
-        await snapshotSwimlanes(page, testInfo, fiveLanes, { theme });
-      });
-
-      test(`renders coloured handdrawn lanes under ${theme}`, async ({ page }, testInfo) => {
-        await snapshotSwimlanes(page, testInfo, fiveLanes, { theme, look: 'handDrawn' });
-      });
-    }
+    // "renders coloured lanes under redux-color/redux-dark-color" and their
+    // handdrawn-look counterparts used to live here — now fixtures:
+    // e2e/diagrams/swimlanes/release/coloured-lanes-{,handdrawn-look-}redux{,-dark}-color-theme.mmd
   });
 
   test('puts nodes without an explicit subgraph into a default swimlane', async ({
