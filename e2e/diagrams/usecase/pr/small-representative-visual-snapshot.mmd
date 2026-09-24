@@ -12,7 +12,7 @@ config:
 usecase-beta
   accTitle: Complete use case example
   accDescr: Actors interact with authentication, payment, notes, and JSON data.
-  actor Normal("Normal User") <<Human>>
+  actor Normal("Normal User") &lt;&lt;Human&gt;&gt;
   actor Hollow@{ type: hollow, business: true }
   actor Awesome@{ type: awesome }
   actor Icon@{ icon: "fa:bell" }
@@ -22,14 +22,14 @@ usecase-beta
   systemBoundary "Authentication System":::framed
     actor ContainedActor("Contained actor")
     Login("`**Sign in**
-securely`") <<Main>>:::critical
+securely`") &lt;&lt;Main&gt;&gt;:::critical
     Reset[Reset password]
   end
   "Authentication System"@{ type: package }
 
   Payment("Payment")
   Extra("Optional flow")
-  Checkout("Checkout")@{ business: true } <<Core>>
+  Checkout("Checkout")@{ business: true } &lt;&lt;Core&gt;&gt;
   Literal("**Literal markers**")
   Hostile("&lt;img src=x onerror=alert#40;1#41;&gt;")
 

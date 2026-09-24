@@ -2,8 +2,9 @@
 description: >-
   Broad classDiagram-v2 smoke test covering inheritance, composition,
   aggregation, dependency, link, and realization relationship arrows, an
-  `<<interface>>` stereotype, member visibility markers (+/-/#), and a class
-  body block with a stereotype containing an HTML entity. Rendered with
+  interface stereotype, member visibility markers (+/-/#), and a
+  class body block with an entity-escaped stereotype (required so the
+  fixture survives the e2e harness's innerHTML round-trip). Rendered with
   flowchart htmlLabels disabled.
 config:
   logLevel: 1
@@ -13,8 +14,10 @@ config:
 classDiagram-v2
   Class01 <|-- AveryLongClass : Cool
  
-  <<interface>> Class01
- 
+  class Class01 {
+   &lt;&lt;interface&gt;&gt;
+  }
+
   Class03 *-- Class04
   Class05 o-- Class06
   Class07 .. Class08
@@ -33,7 +36,7 @@ classDiagram-v2
   Class01 : #int protectedMarmoset
   Class08 <--> C2: Cool label
   class Class10 {
-  <<service&gt>>
+  &lt;&lt;service&gt;&gt;
   int id
   test()
   }
