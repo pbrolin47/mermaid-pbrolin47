@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { imgSnapshotTest, renderGraph } from '../../helpers/util.ts';
+import { imgSnapshotTest, renderGraph } from '../../../helpers/util.ts';
 
 test.describe('Class diagram', () => {
   test('16: should render multiple class diagrams', async ({ page }, testInfo) => {

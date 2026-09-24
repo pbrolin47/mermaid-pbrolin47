@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { imgSnapshotTest, renderGraph } from '../../helpers/util.ts';
+import { imgSnapshotTest, renderGraph } from '../../../helpers/util.ts';
 
 test.describe('Entity Relationship Diagram', () => {
   test('should render multiple ER diagrams', async ({ page }, testInfo) => {

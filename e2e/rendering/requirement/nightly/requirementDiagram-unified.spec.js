@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { imgSnapshotTest } from '../../helpers/util.ts';
+import { imgSnapshotTest } from '../../../helpers/util.ts';
 
 const testOptions = [
   { description: '', options: { logLevel: 1 } },

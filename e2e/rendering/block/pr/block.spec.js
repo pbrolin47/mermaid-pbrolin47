@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import { renderGraph } from '../../helpers/util.ts';
+import { renderGraph } from '../../../helpers/util.ts';
 
 test.describe('Block diagram', () => {
   test('BL38: should not let a sibling with a much wider label overflow into its neighbors', async ({
