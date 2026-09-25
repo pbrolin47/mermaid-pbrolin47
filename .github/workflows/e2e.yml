@@ -114,6 +114,11 @@ jobs:
       # fixture collection. Empty on every other path (full/diff-scoped
       # runs collect every tier, as today).
       fixture_tier: ${{ steps.scope.outputs.fixture_tier }}
+      # Set to 'true' only when e2e was skipped because a fork PR lacks the
+      # 'run pr tests' label — as opposed to a legitimate docs-only skip.
+      # Read by e2e-required to fail the required check in that case (a
+      # skip due to a missing label must not silently count as passing).
+      pr_tier_missing: ${{ steps.scope.outputs.pr_tier_missing }}
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -209,7 +214,8 @@ jobs:
               echo "[detect-scope] Fork PR — 'run pr tests' active. Scoped to pr tier: ${SPEC}"
             else
               emit_skip
-              echo "[detect-scope] Fork PR — 'run pr tests' label not set. Skipping e2e."
+              set_output pr_tier_missing "true"
+              echo "[detect-scope] Fork PR — 'run pr tests' label not set. Skipping e2e (e2e-required will fail; a repo admin can still merge via the branch protection bypass)."
             fi
             exit 0
           fi
@@ -590,10 +596,21 @@ jobs:
           E2E_RESULT: ${{ needs.e2e.result }}
           SCOPE_RESULT: ${{ needs.detect-scope.result }}
           SPEC_PATTERN: ${{ needs.detect-scope.outputs.spec_pattern }}
+          PR_TIER_MISSING: ${{ needs.detect-scope.outputs.pr_tier_missing }}
         run: |
           echo "detect-scope result: ${SCOPE_RESULT}"
           echo "detect-scope spec_pattern: ${SPEC_PATTERN}"
           echo "e2e result: ${E2E_RESULT}"
+          # A skip because the 'run pr tests' label is missing must NOT count
+          # as passing — that would let a PR merge without its pr-tier tests
+          # ever having run. (A skip for a legitimate reason, e.g. a
+          # docs-only change, still falls through to the case below and
+          # passes as before.) To merge anyway, a repo admin can use the
+          # branch protection bypass — this check has no label-based override.
+          if [ "${PR_TIER_MISSING}" = "true" ]; then
+            echo "FAIL — 'run pr tests' label is not set, so the pr-tier e2e suite did not run. Add the label and push again, or a repo admin can merge anyway via the branch protection bypass."
+            exit 1
+          fi
           case "${E2E_RESULT}" in
             success|skipped)
               echo "OK — required check satisfied."
