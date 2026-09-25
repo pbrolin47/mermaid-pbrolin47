@@ -4,13 +4,22 @@ import {
   assertUniqueSnapshotNames,
   buildFixtureTree,
   collectMmdFixtures,
+  DIAGRAMS_DIR,
   fixtureBaseName,
   fixturePath,
+  readFixtureMetadata,
   type FixtureTree,
 } from '../helpers/mmd-snapshots.ts';
 import { imgSnapshotTest } from '../helpers/util.ts';
 
-const fixtures = await collectMmdFixtures();
+// Set by CI (.github/workflows/e2e.yml) to 'pr' when a PR's e2e run is
+// scoped to the pr tier — narrows fixture collection to each diagram's
+// pr/ subfolder instead of every tier.
+const fixtureTier = process.env.MERMAID_E2E_FIXTURE_TIER;
+const fixtures = await collectMmdFixtures(
+  DIAGRAMS_DIR,
+  fixtureTier ? `*/${fixtureTier}/**/*.mmd` : undefined
+);
 // Fail fast if two fixtures would share a screenshot baseline (see helper).
 assertUniqueSnapshotNames(fixtures);
 const fixtureTree = buildFixtureTree(fixtures);
@@ -34,7 +43,22 @@ const registerFixtureNode = (node: FixtureTree): void => {
   }
 
   for (const relativePath of [...node.fixtures].sort()) {
-    test(fixtureBaseName(relativePath), async ({ page }, testInfo) => {
+    // Read at registration time (sync, like the fixture file itself below):
+    // `tag` has to be a static option on the `test()` call, not something
+    // decided from inside the async test body.
+    const metadata = readFixtureMetadata(relativePath);
+    const tags = metadata?.tags?.map((tag) => (tag.startsWith('@') ? tag : `@${tag}`));
+
+    test(fixtureBaseName(relativePath), { tag: tags }, async ({ page }, testInfo) => {
+      if (metadata?.description) {
+        testInfo.annotations.push({ type: 'description', description: metadata.description });
+      } else {
+        // Not a failure — most fixtures don't have one yet — but flagged in the
+        // report rather than left silent, since a missing sidecar is otherwise
+        // invisible short of opening the fixture's folder directly.
+        testInfo.annotations.push({ type: 'metadata', description: 'No metadata found for test' });
+      }
+
       let source: string;
       try {
         source = readFileSync(fixturePath(relativePath), 'utf8');
