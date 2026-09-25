@@ -114,11 +114,13 @@ jobs:
       # fixture collection. Empty on every other path (full/diff-scoped
       # runs collect every tier, as today).
       fixture_tier: ${{ steps.scope.outputs.fixture_tier }}
-      # Set to 'true' only when e2e was skipped because a fork PR lacks the
-      # 'run pr tests' label — as opposed to a legitimate docs-only skip.
-      # Read by e2e-required to fail the required check in that case (a
-      # skip due to a missing label must not silently count as passing).
-      pr_tier_missing: ${{ steps.scope.outputs.pr_tier_missing }}
+      # Set to 'true' only when e2e was skipped because a fork PR lacks its
+      # required gating label ('run pr tests' targeting develop, or 'run
+      # release test' targeting master) — as opposed to a legitimate
+      # docs-only skip. Read by e2e-required to fail the required check in
+      # that case (a skip due to a missing label must not silently count as
+      # passing).
+      required_tests_missing: ${{ steps.scope.outputs.required_tests_missing }}
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -139,12 +141,16 @@ jobs:
           TARGET_HASH: ${{ env.targetHash }}
           # PRs use base.ref (`master` / `develop`); merge_group uses `refs/heads/...`.
           BASE_REF: ${{ github.event.pull_request.base.ref || github.event.merge_group.base_ref || '' }}
-          # Fork-only PR-tier gating (see the branch below). Never true for
+          # Fork-only label gating (see the branch below). Never true for
           # upstream mermaid-js/mermaid, so this repo's e2e.yml keeps its
           # original diff-based-only behavior if ever synced/PR'd upstream.
           IS_FORK_REPO: ${{ github.repository == 'pbrolin47/mermaid-pbrolin47' }}
           PR_ACTION: ${{ github.event.action }}
+          # Unlike BASE_REF above, this is PR-only (no merge_group fallback) —
+          # it only decides which of the two label gates below applies.
+          PR_BASE_REF: ${{ github.event.pull_request.base.ref }}
           PR_HAS_RUN_LABEL: ${{ contains(github.event.pull_request.labels.*.name, 'run pr tests') }}
+          PR_HAS_RELEASE_LABEL: ${{ contains(github.event.pull_request.labels.*.name, 'run release test') }}
           # Scoping is ON by default.  To disable, set this repository variable
           # to 'false' (GitHub → Settings → Secrets and variables → Actions → Variables).
           # Using == 'false' (instead of == 'true') ensures fork PRs — where
@@ -198,14 +204,34 @@ jobs:
             exit 0
           fi
 
-          # Fork-only, PR-only: gate on the "run pr tests" label, which
-          # defaults to on (see the ensure-pr-tier-label job — it adds the
-          # label to every freshly-opened PR on this fork). PR_ACTION=opened
-          # is treated the same as the label being present so the very first
-          # run isn't skipped by a race with that job's API call; later
-          # pushes (synchronize) read the label as it stands at push time, so
-          # removing it before pushing again does skip e2e, per design.
+          # Fork-only, PR-only label gating. Which label applies depends on
+          # the PR's target branch:
+          #   - master: "run release test" gates the FULL suite (pr + nightly
+          #     + release tiers — domain is unused, so "full" already covers
+          #     everything those three tiers would). Not a lightweight check;
+          #     this is the release-readiness gate.
+          #   - anything else (develop, in practice): "run pr tests" gates
+          #     the pr tier only, as before.
+          # Both labels default to on for a freshly-opened PR (see the
+          # ensure-pr-tier-label / ensure-release-label jobs, which add them
+          # on 'opened'); PR_ACTION=opened is treated the same as the label
+          # being present so the very first run isn't skipped by a race with
+          # those jobs' API calls. Later pushes (synchronize) read the label
+          # as it stands at push time, so removing it before pushing again
+          # does skip e2e, per design.
           if [ "$GITHUB_EVENT_NAME" = "pull_request" ] && [ "$IS_FORK_REPO" = "true" ]; then
+            if [ "$PR_BASE_REF" = "master" ]; then
+              if [ "$PR_ACTION" = "opened" ] || [ "$PR_HAS_RELEASE_LABEL" = "true" ]; then
+                emit_full
+                echo "[detect-scope] Fork PR -> master — 'run release test' active. Full suite."
+              else
+                emit_skip
+                set_output required_tests_missing "true"
+                echo "[detect-scope] Fork PR -> master — 'run release test' label not set. Skipping e2e (e2e-required will fail; a repo admin can still merge via the branch protection bypass)."
+              fi
+              exit 0
+            fi
+
             if [ "$PR_ACTION" = "opened" ] || [ "$PR_HAS_RUN_LABEL" = "true" ]; then
               SPEC=$(node scripts/e2e-pr-tier-scope.mjs)
               set_output spec_pattern "$SPEC"
@@ -214,7 +240,7 @@ jobs:
               echo "[detect-scope] Fork PR — 'run pr tests' active. Scoped to pr tier: ${SPEC}"
             else
               emit_skip
-              set_output pr_tier_missing "true"
+              set_output required_tests_missing "true"
               echo "[detect-scope] Fork PR — 'run pr tests' label not set. Skipping e2e (e2e-required will fail; a repo admin can still merge via the branch protection bypass)."
             fi
             exit 0
@@ -310,6 +336,48 @@ jobs:
                 name: label,
                 color: '0e8a16',
                 description: "Scopes this PR's e2e run to the pr/ tier (default on)",
+              });
+              await github.rest.issues.addLabels({ owner, repo, issue_number, labels: [label] });
+            }
+
+  # Fork-only: makes the "run release test" label default-on for every
+  # freshly-opened PR targeting master (the release-readiness gate — see the
+  # PR_BASE_REF branch in detect-scope). Same pattern as ensure-pr-tier-label
+  # above, scoped to master-bound PRs only.
+  ensure-release-label:
+    if: >-
+      ${{
+        github.repository == 'pbrolin47/mermaid-pbrolin47' &&
+        github.event_name == 'pull_request' &&
+        github.event.action == 'opened' &&
+        github.event.pull_request.base.ref == 'master'
+      }}
+    runs-on: ubuntu-slim
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Add default "run release test" label
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        continue-on-error: true
+        with:
+          script: |
+            const label = 'run release test';
+            const { owner, repo } = context.repo;
+            const issue_number = context.payload.pull_request.number;
+            try {
+              await github.rest.issues.addLabels({ owner, repo, issue_number, labels: [label] });
+            } catch (error) {
+              if (error.status !== 404) {
+                throw error;
+              }
+              // Label doesn't exist in the repo yet — create it, then retry once.
+              await github.rest.issues.createLabel({
+                owner,
+                repo,
+                name: label,
+                color: 'b60205',
+                description:
+                  "Gates the full e2e suite (pr+nightly+release tiers) on PRs targeting master (default on)",
               });
               await github.rest.issues.addLabels({ owner, repo, issue_number, labels: [label] });
             }
@@ -596,19 +664,20 @@ jobs:
           E2E_RESULT: ${{ needs.e2e.result }}
           SCOPE_RESULT: ${{ needs.detect-scope.result }}
           SPEC_PATTERN: ${{ needs.detect-scope.outputs.spec_pattern }}
-          PR_TIER_MISSING: ${{ needs.detect-scope.outputs.pr_tier_missing }}
+          REQUIRED_TESTS_MISSING: ${{ needs.detect-scope.outputs.required_tests_missing }}
         run: |
           echo "detect-scope result: ${SCOPE_RESULT}"
           echo "detect-scope spec_pattern: ${SPEC_PATTERN}"
           echo "e2e result: ${E2E_RESULT}"
-          # A skip because the 'run pr tests' label is missing must NOT count
-          # as passing — that would let a PR merge without its pr-tier tests
-          # ever having run. (A skip for a legitimate reason, e.g. a
-          # docs-only change, still falls through to the case below and
-          # passes as before.) To merge anyway, a repo admin can use the
+          # A skip because a required gating label is missing ('run pr tests'
+          # targeting develop, or 'run release test' targeting master) must
+          # NOT count as passing — that would let a PR merge without its
+          # required tests ever having run. (A skip for a legitimate reason,
+          # e.g. a docs-only change, still falls through to the case below
+          # and passes as before.) To merge anyway, a repo admin can use the
           # branch protection bypass — this check has no label-based override.
-          if [ "${PR_TIER_MISSING}" = "true" ]; then
-            echo "FAIL — 'run pr tests' label is not set, so the pr-tier e2e suite did not run. Add the label and push again, or a repo admin can merge anyway via the branch protection bypass."
+          if [ "${REQUIRED_TESTS_MISSING}" = "true" ]; then
+            echo "FAIL — the required gating label ('run pr tests' or 'run release test') is not set, so the required e2e suite did not run. Add the label and push again, or a repo admin can merge anyway via the branch protection bypass."
             exit 1
           fi
           case "${E2E_RESULT}" in
