@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { urlSnapshotTest } from '../helpers/util.ts';
+import { urlSnapshotTest } from '../../helpers/util.ts';
 
 test.describe('mermaid', () => {
   test.describe('registerDiagram', () => {

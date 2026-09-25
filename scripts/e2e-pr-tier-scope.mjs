@@ -2,9 +2,10 @@
 /**
  * Builds the Playwright spec pattern for a "pr tier" e2e run: every
  * diagram's curated pr-subfolder hand-written specs under e2e/rendering,
- * plus the global mmd snapshot runner (which is separately tier-filtered
- * to each diagram's pr-subfolder fixtures under e2e/diagrams at runtime,
- * via MERMAID_E2E_FIXTURE_TIER).
+ * the cross-cutting specs under e2e/other/pr (xss, ghsa, configuration,
+ * etc.), plus the global mmd snapshot runner (which is separately
+ * tier-filtered to each diagram's pr-subfolder fixtures under e2e/diagrams
+ * at runtime, via MERMAID_E2E_FIXTURE_TIER).
  *
  * Convention: every diagram folder under e2e/rendering may have a pr
  * subfolder. No hardcoded diagram list — discovered at runtime, same as
@@ -26,6 +27,11 @@ import { fileURLToPath } from 'url';
 
 export const SPEC_BASE_DIR = 'e2e/rendering';
 export const MMD_SNAPSHOTS_SPEC = `${SPEC_BASE_DIR}/mmd-snapshots.spec.ts`;
+// e2e/other/ holds cross-cutting specs (xss, ghsa, configuration, iife,
+// interaction, rerender, external-diagrams) — not a per-diagram folder, so
+// it isn't discovered by the e2e/rendering scan below and is checked
+// explicitly instead.
+export const OTHER_PR_DIR = 'e2e/other/pr';
 
 /**
  * @param {string} [specBaseDir]
@@ -49,6 +55,10 @@ export function buildPrTierSpecPattern(specBaseDir = SPEC_BASE_DIR) {
     if (existsSync(prDir)) {
       specs.add(`${prDir}/`);
     }
+  }
+
+  if (existsSync(OTHER_PR_DIR)) {
+    specs.add(`${OTHER_PR_DIR}/`);
   }
 
   specs.add(MMD_SNAPSHOTS_SPEC);

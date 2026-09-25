@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { imgSnapshotTest, mermaidUrl, utf8ToB64 } from '../helpers/util.ts';
+import { imgSnapshotTest, mermaidUrl, utf8ToB64 } from '../../helpers/util.ts';
 
 test.describe('XSS', () => {
   test('should handle xss in tags', async ({ page }, testInfo) => {

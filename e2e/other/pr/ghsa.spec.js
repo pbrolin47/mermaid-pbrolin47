@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { urlSnapshotTest, openURLAndVerifyRendering, imgSnapshotTest } from '../helpers/util.ts';
+import { urlSnapshotTest, openURLAndVerifyRendering, imgSnapshotTest } from '../../helpers/util.ts';
 
 test.describe('CSS injections', () => {
   test('should not allow CSS injections outside of the diagram', async ({ page }, testInfo) => {

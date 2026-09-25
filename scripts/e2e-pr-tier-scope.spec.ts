@@ -1,5 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import { buildPrTierSpecPattern, SPEC_BASE_DIR, MMD_SNAPSHOTS_SPEC } from './e2e-pr-tier-scope.mjs';
+import {
+  buildPrTierSpecPattern,
+  SPEC_BASE_DIR,
+  MMD_SNAPSHOTS_SPEC,
+  OTHER_PR_DIR,
+} from './e2e-pr-tier-scope.mjs';
 
 // The tests run in the repo root, so the pr/ subfolders created by the file
 // reorganisation are present on disk — no mocking needed.
@@ -16,6 +21,10 @@ describe('buildPrTierSpecPattern', () => {
     );
   });
 
+  it('includes the cross-cutting e2e/other/pr specs', () => {
+    expect(buildPrTierSpecPattern().split(',')).toContain(`${OTHER_PR_DIR}/`);
+  });
+
   it('returns patterns that Playwright can compile as regular expressions', () => {
     for (const pattern of buildPrTierSpecPattern().split(',')) {
       expect(() => new RegExp(pattern, 'gi')).not.toThrow();
@@ -27,7 +36,9 @@ describe('buildPrTierSpecPattern', () => {
     expect(patterns).toEqual([...new Set(patterns)].sort());
   });
 
-  it('returns just the runner when the spec base dir has no diagram folders', () => {
-    expect(buildPrTierSpecPattern('e2e/does-not-exist')).toBe(MMD_SNAPSHOTS_SPEC);
+  it('returns just the runner and e2e/other/pr when the spec base dir has no diagram folders', () => {
+    expect(buildPrTierSpecPattern('e2e/does-not-exist').split(',')).toEqual(
+      [`${OTHER_PR_DIR}/`, MMD_SNAPSHOTS_SPEC].sort()
+    );
   });
 });

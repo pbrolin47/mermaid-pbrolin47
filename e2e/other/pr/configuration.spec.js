@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { renderGraph, verifyScreenshot } from '../helpers/util.ts';
+import { renderGraph, verifyScreenshot } from '../../helpers/util.ts';
 
 test.describe('Configuration', () => {
   test.describe('arrowMarkerAbsolute', () => {
